@@ -1,0 +1,238 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'assets/css/own_style.css' %}">
+    <style>
+
+
+        @media (max-width: 768px) {
+            .video-banner img {
+                width: 450px;
+                height: 300px;
+            }
+        }
+
+        #bg-red-rounded {
+            border-radius: 50px;
+            text-decoration: red underline;
+        }
+        #bg-green-rounded{
+            border-radius: 50px;
+            text-decoration: red underline;
+        }
+
+    </style>
+{% endblock %}
+
+{% block content %}
+
+    <div class="page-wrapper">
+        <div class="background" style="background-image: url({% static 'own_img/main.jpg' %});">
+
+            {% include 'includes/nav.html' %}
+            <!-- End .header -->
+
+
+            <div class="slider">
+                <div class="intro">
+                    <div class="title">
+                        <h3>Elegant Photo Frames & Home Decor</h3>
+                    </div>
+                    <div class="content">
+                        <h4><i>
+                        </i>2025 Collections </h4>
+                        <h5 id="intro_text">Discover Our Latest</h5>
+                    </div>
+                    <div class="action">
+                        <a href="{% url 'products' %}">discover now</a>
+                    </div>
+                </div>
+                <!-- <img src="own_img/main.jpg"> -->
+            </div>
+        </div>
+
+
+        <main class="main">
+
+
+            <section class="logos">
+
+            </section>
+            <!-- End .container -->
+
+            <section class="banners center">
+                <div class="container">
+                    <div class="row">
+                        <div class="banner col-lg-4 col-md-6 col-sm-6">
+                            <img src="{% static 'own_img/main/main-sm.jpeg' %}">
+                            <div class="intro">
+                                <div class="title">
+                                    <h3 class="text-dark bg-white">Online mega deal</h3>
+                                </div>
+                                <div class="content">
+                                    <h4 class="text-dark bg-white">Photo Frames &<br> Wall Art</h4>
+                                </div>
+                                <div class="action">
+                                    <a href="products.html" class="text-dark ">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="banner percent col-lg-4 col-md-6 col-sm-6">
+                            <img src="{% static 'own_img/main/main-sm-2.jpeg' %}">
+                            <div class="intro">
+                                <div class="title">
+                                    <h3 class="">Refresh </h3>
+                                    <h4>your space</h4>
+                                </div>
+                                <div class="img-percent">
+                                    <img src="{% static 'assets/images/demos/demo-24/banners/percent.png' %}"
+                                         width="190" height="75">
+                                </div>
+                                <div class="content">
+                                    <h4>Discover handcrafted frames<br></h4>
+                                </div>
+                                <div class="action">
+                                    <a href="products.html" class="text-dark ">Discover Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="banner col-lg-4  col-md-6 col-sm-6">
+                            <img src="{% static 'own_img/main/main-sm-3.jpeg' %}">
+                            <div class="intro">
+                                <div class="title">
+                                    <h3 class="text-dark bg-white">Festive Offers & Discounts</h3>
+                                </div>
+                                <div class="content">
+                                    <h4 class="text-dark bg-white">Decor Accents <br>& Indoor Styling</h4>
+                                </div>
+                                <div class="action ">
+                                    <a href="products.html" class="text-dark ">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="best-sellers">
+                <div class="container">
+                    <div class="heading">
+                        <p class="heading-cat">favourite from every category</p>
+                        <h3 class="heading-title">Best Sellers</h3>
+                    </div>
+                    <div class="owl-carousel owl-simple carousel-equal-height carousel-with-shadow text-center"
+                         data-toggle="owl" data-owl-options='{
+                        "nav": true, 
+                        "dots": false,
+                        "margin": 30,
+                        "loop": false,
+                        "responsive": {
+                            "0": {
+                                "items":2
+                            },
+                            "768": {
+                            	"items":3
+                            },
+                            "992": {
+                                "items":3
+                            },
+                            "1200": {
+                            	"items":4
+                            }
+                        }
+                    }'>
+                        {% for product in best_products %}
+                        <div class="product product-10 text-center">
+
+                            <figure class="product-media">
+                                <a href="{% url 'product' product.id %}">
+                                    <img src="{{ product.image_1.url }}" alt="Product image" class="product-image">
+                                    <img src="{{ product.image_1.url }}" alt="Product image" class="product-image-hover">
+                                </a>
+
+
+                                <!-- End .product-action-vertical -->
+                            </figure>
+                            <!-- End .product-media -->
+
+                            <div class="product-body">
+
+                                <div class="product-action">
+                                    <a href="{% url 'product' product.id %}"
+                                       class="btn-cart"><span>add to cart</span></a>
+                                </div>
+                                <!-- End .product-action -->
+                                <div class="product-intro">
+                                    <h3 class="product-title">
+                                        <a href="{% url 'product' product.id %}">{{ product.name }}</a>
+                                    </h3>
+                                    <!-- End .product-title -->
+
+                                     {% if product.is_discount %}
+                                                <div class="product-price">
+                                                    <span class="new-price"> &#8377;{{ product.discount_price }}</span>
+                                                    <span class="old-price"> &#8377;{{ product.price }}</span>
+                                                </div>
+                                            {% else %}
+                                                <div class="product-price">
+                                                    <span class="new-price"> &#8377;{{ product.price }}</span>
+
+                                                </div>
+                                            {% endif %}
+
+                                    <!-- End .product-price -->
+                                </div>
+
+
+
+                            </div>
+                            <!-- End .product-body -->
+                        </div>
+                        {% endfor %}
+                        <!-- End .product -->
+
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="banners stretch mt-2">
+
+            </section>
+
+
+            <section class="video-banner">
+                <img src="{% static 'assets/images/demos/demo-24/video-banner/banner.jpg' %}">
+
+                <div class="intro video">
+                    <div class="title">
+                        <h3><i>Elegant & Trendy</i></h3>
+                    </div>
+                    <div class="content">
+                        <h4>Photo Frames &<br> Home Decor 2025</h4>
+                    </div>
+                    <div class="action">
+                        <!-- <a href="" class="btn-iframe"><i class="icon-play"></i></a> -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="subscribe">
+
+            </section>
+
+            <section class="blog mb-6">
+
+            </section>
+
+            <section class="instagram mb-3">
+
+            </section>
+        </main>
+
+
+
+{% endblock %}
