@@ -28,7 +28,7 @@ class Cart:
     def products(self):
         all_products = {}
         for key,val in self.cart.items():
-            product = Product.objects.get(id=key)
+            product = Product.objects.get(product_id=key)
             all_products[product] = val
         return all_products
 
@@ -44,7 +44,7 @@ class Cart:
     def total(self):
         total = 0
         for pro_id,qty in self.cart.items():
-            product = Product.objects.get(id=pro_id)
+            product = Product.objects.get(product_id=pro_id)
             if product.is_discount:
                 product_price = product.discount_price
             else:

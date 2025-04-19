@@ -38,7 +38,7 @@ def products(request):
 
 def product_detail(request,id):
 
-    product = get_object_or_404(Product,id=id)
+    product = get_object_or_404(Product,product_id=id)
     discount_percentage = 0
     if product.is_discount:
         discount_percentage = round(100 - (int(product.discount_price) / int(product.price)) * 100)
