@@ -5,8 +5,7 @@ from django.contrib.auth.models import User
 from core.models import Product
 # Create your models here.
 class ShippingAddress(models.Model):
-    temp_uuid = models.UUIDField(default=uuid.uuid4, null=True)
-    id = models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False)
+    address_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     address = models.CharField(max_length=255)
@@ -22,7 +21,7 @@ class ShippingAddress(models.Model):
 
 
 class Order(models.Model):
-    id = models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False)
+    order_models_id = models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False)
     user = models.ForeignKey(User,on_delete=models.RESTRICT)
     address = models.OneToOneField(ShippingAddress,on_delete=models.RESTRICT)
     order_id = models.CharField(max_length=255,null=True,blank=True,editable=False)
