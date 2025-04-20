@@ -13,7 +13,7 @@ def home(request):
     except:
         product = None
 
-
+    print(f"http://{request.get_host()}")
 
     context = {
         "best_products":product

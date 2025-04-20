@@ -87,6 +87,7 @@ def proccess_order(request,pk):
         })
 
 
+@csrf_exempt
 def payment_verify(request):
 
     if "razorpay_signature" in request.POST:
