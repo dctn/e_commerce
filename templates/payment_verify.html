@@ -16,7 +16,9 @@
             <div class="card p-5">
                 <h1 class="card-header mb-3">{{ status }}</h1>
                 <hr>
+                {% if order_id %}
                 <h1 class="card-header mb-3">Note this order id or take screen shot: <span class="bg-danger rounded p-1">{{ order_id }}</span></h1>
+                {% endif %}
                 <div class="card-body">
                     <a href="{% url 'products' %}" class="btn btn-primary">continue Shopping</a>
                 </div>

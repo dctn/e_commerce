@@ -122,7 +122,6 @@
                             </li>
 
 
-
                         </ul>
                         <!-- End .widget-list -->
                     </div>
@@ -171,10 +170,22 @@
                     <a href="{% url 'about' %}">ABOUT US</a>
                 </li>
 
+                <li><a href="tel:+919444424338"><i class="icon-phone"></i>Call: +91 9444424338</a></li>
+
 
                 <li>
                     <a href="{% url 'contact' %}">CONTACTS</a>
                 </li>
+
+                {% if request.user.is_superuser %}
+                    <li>
+                        <a href="{% url 'orders' %}" class="">Orders</a>
+                    </li>
+                {% elif request.user.is_authenticated %}
+                    <li>
+                        <a href="{% url 'your_orders' %}" class="">Your Orders</a>
+                    </li>
+                {% endif %}
 
                 {% if request.user.is_authenticated %}
                     <li>
@@ -250,26 +261,26 @@
 </script>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-      const messageContainer = document.getElementById("message-container");
-      if (messageContainer) {
-        messageContainer.style.transition = "opacity 0.5s ease";
-        messageContainer.style.opacity = 0;
-        setTimeout(() => messageContainer.remove(), 500);  // Fully remove from DOM after fade
-      }
-    }, 2000);
-  });
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+            const messageContainer = document.getElementById("message-container");
+            if (messageContainer) {
+                messageContainer.style.transition = "opacity 0.5s ease";
+                messageContainer.style.opacity = 0;
+                setTimeout(() => messageContainer.remove(), 500);  // Fully remove from DOM after fade
+            }
+        }, 2000);
+    });
 </script>
 
 <script>
-  setTimeout(() => {
-    const msg = document.getElementById("message-container");
-    if (msg) {
-      msg.classList.add("opacity-0");
-      setTimeout(() => msg.remove(), 500);
-    }
-  }, 2000);
+    setTimeout(() => {
+        const msg = document.getElementById("message-container");
+        if (msg) {
+            msg.classList.add("opacity-0");
+            setTimeout(() => msg.remove(), 500);
+        }
+    }, 2000);
 </script>
 
 

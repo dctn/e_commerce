@@ -123,8 +123,10 @@ def payment_verify(request):
                 del request.session["session_key"]
 
 
-            return render(request,"payment_verify.html",{"status": "Payment Verified Successfully","order_id":order_id})
+            # return render(request,"payment_verify.html",{"status": "Payment Verified Successfully","order_id":order_id})
+            return redirect("confirm_order",order_id)
         except razorpay.errors.SignatureVerificationError:
+
             return render(request,"payment_verify.html",{"status":"Payment verification failed"})
 
     return render(request,"payment_verify.html",{"status":"Invalid Request"})
@@ -141,3 +143,6 @@ def update_address(request,order_pk,pk):
             return redirect("billing_info", order_pk)
     return render(request,"checkout.html",{"form":form})
 
+def confirm_order(request,order_id):
+
+    return render(request,"payment_verify.html",{"status": "Payment Verified Successfully","order_id":order_id})

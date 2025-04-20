@@ -34,7 +34,7 @@ def products(request):
     context = {
         "product":all_products
     }
-    return render(request, "products.html",context)
+    return render(request, "products_2.html",context)
 
 def product_detail(request,id):
 
@@ -80,6 +80,10 @@ def contact(request):
 def order(request):
     if request.user.is_authenticated and request.user.is_superuser:
         orders = Order.objects.all()
+
+        paginator = Paginator(orders,10)
+        page = request.GET.get("page")
+        orders = paginator.get_page(page)
 
         context = {
             "orders":orders

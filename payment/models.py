@@ -32,6 +32,9 @@ class Order(models.Model):
     is_paid = models.BooleanField(default=False)
     ordered_date = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return f"{self.user}"
+
 
 
 class OrderItems(models.Model):

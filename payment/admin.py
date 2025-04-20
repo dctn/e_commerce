@@ -18,5 +18,14 @@ class OrderAdmin(admin.ModelAdmin):
     readonly_fields = ["ordered_date","payment_id","signature","order_id"]
     search_fields = ["is_paid"]
 
+class OrderItemAdmin(admin.ModelAdmin):
+    model = OrderItems
+    list_display = ['order',"product","product_price"]
+
+
+
 admin.site.unregister(Order)
 admin.site.register(Order,OrderAdmin)
+
+admin.site.unregister(OrderItems)
+admin.site.register(OrderItems,OrderItemAdmin)
