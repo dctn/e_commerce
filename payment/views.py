@@ -1,3 +1,5 @@
+import os
+
 from django.shortcuts import render,redirect
 from django.http import JsonResponse,HttpResponseBadRequest
 from .form import ShippingAddressForm
@@ -76,16 +78,18 @@ def proccess_order(request,pk):
             product_price = product_price,
             product_qty= qty
         )
-
+    if os.environ.get("ENVIRONMENT") == "production":
+        callback_url = request.build_absolute_uri(reverse(settings.RAZOR_PAY_CALLBACK_URL)).replace("http://", "https://")
+    else:
+        callback_url = request.build_absolute_uri(reverse(settings.RAZOR_PAY_CALLBACK_URL))
 
     return JsonResponse({
             "order_id":razorpay_order["id"],
             "razorpay_key_id":settings.RAZOR_PAY_KEY_ID,
             "product_name":request.user.username,
             "amount":razorpay_order["amount"],
-            "callback_url":request.build_absolute_uri(reverse(settings.RAZOR_PAY_CALLBACK_URL)).replace("http://", "https://"),
+            "callback_url": callback_url,
         })
-
 
 @csrf_exempt
 def payment_verify(request):
@@ -119,7 +123,7 @@ def payment_verify(request):
                 product.save()
 
 
-            if "session_key" in request.session["session_key"]:
+            if "session_key" in request.session:
                 del request.session["session_key"]
 
 

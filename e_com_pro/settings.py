@@ -233,7 +233,8 @@ RAZOR_PAY_CALLBACK_URL = "payment_verify"
 
 
 # Add these to your Django settings.py
-SECURE_SSL_REDIRECT = True  # Redirects all HTTP requests to HTTPS
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+if os.environ.get("ENVIRONMENT") == 'production':
+    SECURE_SSL_REDIRECT = True  # Redirects all HTTP requests to HTTPS
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
