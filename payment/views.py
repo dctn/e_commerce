@@ -83,11 +83,10 @@ def proccess_order(request,pk):
             "razorpay_key_id":settings.RAZOR_PAY_KEY_ID,
             "product_name":request.user.username,
             "amount":razorpay_order["amount"],
-            "callback_url":request.build_absolute_uri(reverse(settings.RAZOR_PAY_CALLBACK_URL)),
+            "callback_url":request.build_absolute_uri(reverse(settings.RAZOR_PAY_CALLBACK_URL)).replace("http://", "https://"),
         })
 
 
-@csrf_exempt
 def payment_verify(request):
 
     if "razorpay_signature" in request.POST:
