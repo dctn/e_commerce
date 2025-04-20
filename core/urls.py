@@ -10,4 +10,5 @@ urlpatterns = [
     path("orders/",order,name="orders"),
     path("order_details/<pk>",order_details,name="order_details"),
     path("your_orders/",your_order,name="your_orders"),
+    path("update_shipped/<pk>",update_shipped,name="update_shipped"),
 ]

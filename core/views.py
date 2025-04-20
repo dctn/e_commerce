@@ -120,3 +120,10 @@ def your_order(request):
         except Exception as e:
             return render(request,"order.html",{"no_order":"Your have no order on queue"})
     return redirect("home")
+
+def update_shipped(request,pk):
+    order = Order.objects.get(pk=pk)
+    order.is_shipped =True
+    order.save()
+    messages.success(request,"Order is shipped and updated in model")
+    return redirect("orders")

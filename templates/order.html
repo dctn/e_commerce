@@ -28,7 +28,7 @@
                     </thead>
                     <tbody>
                     {% for order in orders %}
-                        {% if order.is_paid %}
+                        {% if order.is_paid and not order.is_shipped %}
                             <tr>
                                 <th scope="row" class="">{{ order.order_id }}</th>
                                 <td class="">{{ order.user }}</td>

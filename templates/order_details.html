@@ -29,18 +29,34 @@
             <div class="card p-5">
                 <h5 class="card-header mb-2">Address</h5>
                 <div class="card-body">
-                    <h5 class="card-title p-2 mb-2"><span class="bg-danger rounded-lg p-2 text-white ">First Name:</span> {{ order.address.first_name }}</h5>
-                    <h5 class="card-title p-2 mb-2"><span class="bg-danger rounded-lg p-2 text-white">last Name:</span> {{ order.address.last_name }}</h5>
-                    <h5 class="card-title p-2 mb-2"><span class="bg-danger rounded-lg p-2 text-white">Address:</span> {{ order.address.address }}</h5>
-                    <h5 class="card-title p-2 mb-2"><span class="bg-danger rounded-lg p-2 text-white">City:</span> {{ order.address.city }}</h5>
-                    <h5 class="card-title p-2 mb-2"><span class="bg-danger rounded-lg p-2 text-white">State:</span> {{ order.address.state }}</h5>
-                    <h5 class="card-title p-2 mb-2"><span class="bg-danger rounded-lg p-2 text-white">PinCode:</span> {{ order.address.pin_code }}</h5>
-                    <h5 class="card-title p-2 mb-2"><span class="bg-danger rounded-lg p-2 text-white">Country:</span> {{ order.address.country }}</h5>
-                    <h5 class="card-title p-2 mb-2"><span class="bg-danger rounded-lg p-2 text-white">Phone NO:</span> {{ order.address.phone_no }}</h5>
-                    <h5 class="card-title p-2 mb-2"><span class="bg-danger rounded-lg p-2 text-white">Email id:</span> {{ order.address.email }}</h5>
+                    <h5 class="card-title p-2 mb-2"><span
+                            class="bg-danger rounded-lg p-2 text-white ">First Name:</span> {{ order.address.first_name }}
+                    </h5>
+                    <h5 class="card-title p-2 mb-2"><span
+                            class="bg-danger rounded-lg p-2 text-white">last Name:</span> {{ order.address.last_name }}
+                    </h5>
+                    <h5 class="card-title p-2 mb-2"><span
+                            class="bg-danger rounded-lg p-2 text-white">Address:</span> {{ order.address.address }}</h5>
+                    <h5 class="card-title p-2 mb-2"><span
+                            class="bg-danger rounded-lg p-2 text-white">City:</span> {{ order.address.city }}</h5>
+                    <h5 class="card-title p-2 mb-2"><span
+                            class="bg-danger rounded-lg p-2 text-white">State:</span> {{ order.address.state }}</h5>
+                    <h5 class="card-title p-2 mb-2"><span
+                            class="bg-danger rounded-lg p-2 text-white">PinCode:</span> {{ order.address.pin_code }}
+                    </h5>
+                    <h5 class="card-title p-2 mb-2"><span
+                            class="bg-danger rounded-lg p-2 text-white">Country:</span> {{ order.address.country }}</h5>
+                    <h5 class="card-title p-2 mb-2"><span
+                            class="bg-danger rounded-lg p-2 text-white">Phone NO:</span> {{ order.address.phone_no }}
+                    </h5>
+                    <h5 class="card-title p-2 mb-2"><span
+                            class="bg-danger rounded-lg p-2 text-white">Email id:</span> {{ order.address.email }}</h5>
                 </div>
             </div>
 
+            {% if request.user.is_superuser %}
+                <a href="{% url 'update_shipped' order.id %}" class="btn btn-primary">Shipped</a>
+            {% endif %}
 
         </div>
     </div>
