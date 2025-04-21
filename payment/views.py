@@ -47,8 +47,8 @@ def billing_info(request,pk):
 def proccess_order(request,pk):
     cart = Cart(request)
     products = cart.products()
-    # removed divlivery charge
-    total_amount = cart.total()
+    # added divlivery charge
+    total_amount = cart.total() + 100
 
     client = razorpay.Client(auth=(settings.RAZOR_PAY_KEY_ID,settings.RAZOR_PAY_SECRET_KEY))
 

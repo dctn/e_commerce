@@ -28,7 +28,7 @@
                     </thead>
                     <tbody>
                     {% for order in orders %}
-                        {% if order.is_paid and not order.is_shipped %}
+                        {% if order.is_paid %}
                             <tr>
                                 <th scope="row" class="">{{ order.order_id }}</th>
                                 <td class="">{{ order.user }}</td>
@@ -45,6 +45,27 @@
                 </table>
 
             </div>
+            <div class="load-more-container text-center">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        {% if orders.has_previous %}
+                            <li class="btn btn-outline-primary-2 btn-order btn-block">
+                                <a class="page-link" href="?page={{ orders.previous_page_number }}">Previous
+                                    Products</a>
+
+                            </li>
+                            <br>
+                            <br>
+                        {% endif %}
+                        {% if orders.has_next %}
+                            <li class="btn btn-outline-primary-2 btn-order btn-block">
+                                <a class="page-link" href="?page={{ orders.next_page_number }}">More Products</a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            </div>
+
         </div>
 
 

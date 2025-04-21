@@ -79,12 +79,12 @@ def contact(request):
 
 def order(request):
     if request.user.is_authenticated and request.user.is_superuser:
-        orders = Order.objects.all()
+        orders = Order.objects.filter(is_paid=True,is_shipped=False).order_by("ordered_date")
+
 
         paginator = Paginator(orders,10)
         page = request.GET.get("page")
         orders = paginator.get_page(page)
-
         context = {
             "orders":orders
         }
