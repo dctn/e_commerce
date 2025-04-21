@@ -44,6 +44,7 @@ def billing_info(request,pk):
     }
     return render(request,"billing_info.html",context)
 
+@login_required
 def proccess_order(request,pk):
     cart = Cart(request)
     products = cart.products()
