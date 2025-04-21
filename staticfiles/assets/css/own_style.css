@@ -44,11 +44,11 @@ header {
     color: black;
 }
 
-.products .product-media{
+.products .product-media {
     width: 200px;
 }
 
-.total_amount{
+.total_amount {
     background-color: orange;
     padding: 10px;
     border-radius: 20px;
@@ -56,10 +56,16 @@ header {
     color: whitesmoke;
 }
 
-.message{
+.message {
     text-align: center;
     background-color: orange;
     padding: 10px;
     color: whitesmoke;
     border-radius: 50px;
 }
+
+.ruppe {
+    font-family: 'Roboto', 'Arial', 'Noto Sans', sans-serif;
+}
+
+/*test for git*/
