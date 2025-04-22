@@ -227,9 +227,17 @@
 
         <div class="content">
             <h3>Elben Creatives</h3>
-            <h2 class="product-name">{{ product.name }}</h2>
+            <h2 class="product-name">{{ product.name }} ( {{ product.size }} )</h2>
             <p class="product-desc">{{ product.desp|linebreaks }}
             </p>
+
+            <div class="size_box">
+                {% if other_size %}
+                    {% for size in other_size %}
+                        <a class="size_button" href="{% url 'product' size.id %}">{{ size.size }}</a>
+                    {% endfor %}
+                {% endif %}
+            </div>
 
             {% if product.is_discount %}
 

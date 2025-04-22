@@ -42,6 +42,7 @@ class OrderItems(models.Model):
     product = models.ForeignKey(Product,on_delete=models.SET_NULL,null=True,blank=True)
 
     product_name = models.CharField(max_length=255)
+    product_size = models.CharField(max_length=255)
     product_price = models.IntegerField()
     product_qty = models.IntegerField()
 

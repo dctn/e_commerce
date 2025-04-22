@@ -13,7 +13,7 @@ class OrderItemInline(admin.StackedInline):
 class OrderAdmin(admin.ModelAdmin):
     model = Order
     inlines = [OrderItemInline]
-    list_display = ['user',"is_paid","ordered_date"]
+    list_display = ['user',"is_paid","is_shipped","ordered_date"]
 
     readonly_fields = ["ordered_date","payment_id","signature","order_id"]
     search_fields = ["is_paid"]

@@ -78,7 +78,8 @@ def proccess_order(request,pk):
             product = product,
             product_name= product.name,
             product_price = product_price,
-            product_qty= qty
+            product_qty= qty,
+            product_size=product.size
         )
     if os.environ.get("ENVIRONMENT") == "production":
         callback_url = request.build_absolute_uri(reverse(settings.RAZOR_PAY_CALLBACK_URL)).replace("http://", "https://")

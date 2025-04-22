@@ -2,9 +2,19 @@ from django.db import models
 import uuid
 # Create your models here.
 class Product(models.Model):
+    small = "small"
+    medium = "medium"
+    large = "large"
+    SIZE_CHOICE = [
+        (small,"Small"),
+        (medium,"Medium"),
+        (large,"Large"),
+    ]
+
     id = models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False)
     name = models.CharField(max_length=255)
     desp = models.TextField()
+    size = models.CharField(max_length=255,choices=SIZE_CHOICE,default="small")
     price = models.DecimalField(max_digits=8,decimal_places=0)
     is_discount = models.BooleanField(default=False)
     discount_price = models.DecimalField(max_digits=8,decimal_places=0,null=True,blank=True)
@@ -13,6 +23,8 @@ class Product(models.Model):
     image_2 = models.ImageField(upload_to="product_images/",null=True,blank=True)
     image_3 = models.ImageField(upload_to="product_images/",null=True,blank=True)
     image_4 = models.ImageField(upload_to="product_images/",null=True,blank=True)
+
+
 
     def __str__(self):
         return self.name

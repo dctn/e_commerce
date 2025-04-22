@@ -42,9 +42,14 @@ def product_detail(request,id):
     discount_percentage = 0
     if product.is_discount:
         discount_percentage = round(100 - (int(product.discount_price) / int(product.price)) * 100)
+
+    other_size = Product.objects.filter(name=product.name)
+
+
     context = {
         "product":product,
-        "discount_percentage":discount_percentage
+        "discount_percentage":discount_percentage,
+        "other_size":other_size
     }
     return render(request,"product.html",context)
 
