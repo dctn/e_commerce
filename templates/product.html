@@ -329,30 +329,38 @@
         $("#product_qty").text(quantity)
     })
 
-    $(document).on("click", "#add_cart", function (e) {
-        e.preventDefault();
+   $(document).on("click", "#add_cart", function (e) {
+    e.preventDefault();
 
-        $.ajax({
-            type: "POST",
-            url: "{% url 'add_cart' %}",
-            data: {
-                product_id: $("#add_cart").val(),
-                qty: quantity,
-                csrfmiddlewaretoken: "{{ csrf_token }}",
-                action: "post"
-            },
+    let $btn = $(this);
+    let originalText = $btn.html(); // store original button content
 
-            success: function (json) {
-                $("#cart_notice").text("Added to cart!").fadeIn().delay(1000).fadeOut();
-            },
+    $.ajax({
+        type: "POST",
+        url: "{% url 'add_cart' %}",
+        data: {
+            product_id: $("#add_cart").val(),
+            qty: quantity,
+            csrfmiddlewaretoken: "{{ csrf_token }}",
+            action: "post"
+        },
+        success: function (json) {
+            // show temporary success message
+            $("#cart_notice").text("Added to cart!").fadeIn().delay(1000).fadeOut();
 
-            error: function (xhr, errmsg, err) {
-                console.log("Error:", xhr.status, err);
+            // update button text temporarily
+            $btn.html("✔️ Added!").fadeOut(200).fadeIn(200);
 
+            setTimeout(function () {
+                $btn.html(originalText); // revert to original
+            }, 1500);
+        },
+        error: function (xhr, errmsg, err) {
+            console.log("Error:", xhr.status, err);
+        },
+    });
+});
 
-            },
-        })
-    })
 </script>
 
 </body>

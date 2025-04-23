@@ -10,6 +10,10 @@
                 width: 450px;
                 height: 300px;
             }
+            .background{
+
+                background-position: right;
+            }
         }
 
         #bg-red-rounded {
@@ -21,13 +25,14 @@
             text-decoration: red underline;
         }
 
+
     </style>
 {% endblock %}
 
 {% block content %}
 
     <div class="page-wrapper">
-        <div class="background" style="background-image: url({% static 'own_img/main.jpg' %});">
+        <div class="background" style="background-image: url({% static 'own_img/home_page_main_4.jpeg' %});">
 
             {% include 'includes/nav.html' %}
             <!-- End .header -->
@@ -36,12 +41,12 @@
             <div class="slider">
                 <div class="intro">
                     <div class="title">
-                        <h3>Elegant Photo Frames & Home Decor</h3>
+                        <h3 class="text-black-50">Elegant Photo Frames & Home Decor</h3>
                     </div>
                     <div class="content">
-                        <h4><i>
+                        <h4 class="text-black-50"><i>
                         </i>2025 Collections Discover Our Latest</h4>
-                        <h5 id="intro_text">A Perfect Christian Decor </h5>
+                        <h5 id="intro_text" class="text-black-50">A Perfect Christian Decor </h5>
                     </div>
                     <div class="action">
                         <a href="{% url 'products' %}">discover now</a>

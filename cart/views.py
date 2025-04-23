@@ -20,6 +20,7 @@ def cart_add(request):
 
 def cart_summary(request):
     cart = Cart(request)
+
     all_products = cart.products()
 
     total = cart.total()

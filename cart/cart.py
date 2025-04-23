@@ -26,10 +26,15 @@ class Cart:
 
 
     def products(self):
+
         all_products = {}
-        for key,val in self.cart.items():
-            product = Product.objects.get(id=key)
-            all_products[product] = val
+        try:
+            for key,val in self.cart.items():
+                product = Product.objects.get(id=key)
+                all_products[product] = val
+        except Exception as e:
+            del self.session["session_key"]
+            self.session.modified = True
         return all_products
 
     def delete(self,product_id):
