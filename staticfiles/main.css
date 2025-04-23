@@ -258,7 +258,7 @@ body {
 
 .content h3 {
     font-size: 16px;
-    color: var(--orange);
+    color: green;
 }
 
 .content h2 {
@@ -336,7 +336,7 @@ body {
 
 .add-to-cart {
     color: var(--white);
-    background-color: var(--orange);
+    background-color: black;
     border: 0px;
     height: 55px;
     width: 100%;
@@ -627,6 +627,6 @@ body {
     font-weight: bolder;
     text-transform: capitalize;
     padding: 10px;
-    background-color: var(--orange);
+    background-color: green;
     border-radius: 20px;
 }
