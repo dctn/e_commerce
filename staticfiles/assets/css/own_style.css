@@ -1,10 +1,10 @@
-.menu > li > a {
+.menu>li>a {
     color: black;
     font-weight: 500;
 }
 
 @media screen and (min-width: 992px) {
-    .sticky-header.fixed.header-middle .menu > li > a {
+    .sticky-header.fixed.header-middle .menu>li>a {
         padding-top: 2rem;
         padding-bottom: 2rem;
         color: white;
@@ -20,10 +20,9 @@ header {
     padding: 5px 5px;
 }
 
-.menu.sf-arrows > li > .sf-with-ul {
+.menu.sf-arrows>li>.sf-with-ul {
     color: black;
 }
-
 
 .content h5 {
     font-size: 7rem;
@@ -35,8 +34,9 @@ header {
     height: 200px;
 } */
 
-.cart-dropdown .dropdown-toggle, .compare-dropdown .dropdown-toggle, .search-toggle {
-
+.cart-dropdown .dropdown-toggle,
+.compare-dropdown .dropdown-toggle,
+.search-toggle {
     color: black;
 }
 
@@ -68,7 +68,4 @@ header {
     font-family: 'Roboto', 'Arial', 'Noto Sans', sans-serif;
 }
 
-.size_button{
-
-}
-/*test for git*/
+.size_button {}
