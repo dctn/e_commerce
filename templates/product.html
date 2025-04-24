@@ -70,8 +70,8 @@
                 </div>
             </section>
 
-            <section class="nav-second">
-                <div class="cart">
+            <section class="nav-second" style="margin-right: 20px">
+                <div class="cart " >
                     <a href="{% url 'cart_summary' %}">
                         <img
                                 class="cart-icon"
@@ -260,7 +260,7 @@
 
             <h2 id="cart_notice" style="color: orange"></h2>
 
-            <div class="add-to-cart-container">
+            <div class="add-to-cart-container" style="margin-bottom: 110px">
                 <div class="counter">
                     <button class="minus">
                         <svg
@@ -298,7 +298,7 @@
                         </svg>
                     </button>
                 </div>
-                <button class="add-to-cart" id="add_cart" value="{{ product.id }}">
+                <button class="add-to-cart mb-5" id="add_cart" value="{{ product.id }}" >
               <span>
                 <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
                   <path

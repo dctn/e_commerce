@@ -26,7 +26,7 @@ def products(request):
     #     search = request.POST.get("search")
     #     all_products = Product.objects.filter(Q(name__icontains=search) | Q(desp__icontains=search))
 
-    paginator = Paginator(all_products,10)
+    paginator = Paginator(all_products,9)
     page = request.GET.get("page")
     all_products = paginator.get_page(page)
 
