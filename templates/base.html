@@ -12,12 +12,12 @@
     <meta name="description" content="Elben Creatives">
     <meta name="author" content="p-themes">
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/images/demos/demo-24/logo.png' %}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/images/demos/demo-24/logo.png' %}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/images/demos/demo-24/logo.png' %}">
-    <link rel="manifest" href="{% static 'assets/images/demos/demo-24/logo.png' %}">
-    <link rel="mask-icon" href="{% static 'assets/images/demos/demo-24/logo.png' %}" color="#666666">
-    <link rel="shortcut icon" href="{% static 'assets/images/demos/demo-24/logo.png' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'own_img/faicon.jpeg' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'own_img/faicon.jpeg' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'own_img/faicon.jpeg' %}">
+    <link rel="manifest" href="{% static 'own_img/faicon.jpeg' %}">
+    <link rel="mask-icon" href="{% static 'own_img/faicon.jpeg' %}" color="#666666">
+    <link rel="shortcut icon" href="{% static 'own_img/faicon.jpeg' %}">
     <meta name="apple-mobile-web-app-title" content="Elben Creatives">
     <meta name="application-name" content="Elben Creatives">
     <meta name="msapplication-TileColor" content="#cc9966">
@@ -65,7 +65,7 @@
 
 
                     <div class="widget widget-about">
-                        <img src="{% static 'assets/images/demos/demo-24/logo.jpg' %}" class="footer-logo"
+                        <img src="{% static 'own_img/footer_logo.jpeg' %}" class="footer-logo"
                              alt="Footer Logo"
                              width="110" height="25">
                         <p>Founded with a passion for creativity and craftsmanship, Elben Creatives is your
@@ -164,6 +164,13 @@
                 </li>
                 <li>
                     <a href="{% url 'products' %}">SHOP</a>
+
+                      <ul>
+                            <li> <a href="{% url 'products' 'english_quote' %}" >English Quote</a> </li>
+                            <li> <a href="{% url 'products' 'tamil_quote' %}" >Tamil Quote</a> </li>
+
+                        </ul>
+
 
                 </li>
                 <li>

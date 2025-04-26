@@ -20,8 +20,11 @@ def home(request):
     }
     return render(request,"index.html",context)
 
-def products(request):
+def products(request,product_cat=None):
     all_products = Product.objects.all()
+    if product_cat:
+        all_products = Product.objects.filter(quote_type=product_cat)
+
     # if request.method =="POST":
     #     search = request.POST.get("search")
     #     all_products = Product.objects.filter(Q(name__icontains=search) | Q(desp__icontains=search))

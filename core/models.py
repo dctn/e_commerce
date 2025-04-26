@@ -11,6 +11,11 @@ class Product(models.Model):
         (large,"Large"),
     ]
 
+    product_cat = [
+        ("english_quote","English Quote"),
+        ("tamil_quote","Tamil Quote"),
+    ]
+
     id = models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False)
     name = models.CharField(max_length=255)
     desp = models.TextField()
@@ -19,6 +24,7 @@ class Product(models.Model):
     is_discount = models.BooleanField(default=False)
     discount_price = models.DecimalField(max_digits=8,decimal_places=0,null=True,blank=True)
     no_of_sales = models.IntegerField(default=0)
+    quote_type = models.CharField(choices=product_cat,max_length=255,default="english_quote")
     image_1 = models.ImageField(upload_to="product_images/",default="default_product.jpg")
     image_2 = models.ImageField(upload_to="product_images/",null=True,blank=True)
     image_3 = models.ImageField(upload_to="product_images/",null=True,blank=True)

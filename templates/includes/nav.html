@@ -27,6 +27,11 @@
                     <li>
                         <a href="{% url 'products' %}" class="">Shop</a>
                         <!-- End .megamenu megamenu-md -->
+                        <ul>
+                            <li> <a href="{% url 'products' 'english_quote' %}" >English Quote</a> </li>
+                            <li> <a href="{% url 'products' 'tamil_quote' %}" >Tamil Quote</a> </li>
+
+                        </ul>
 
 
                     </li>
@@ -91,6 +96,7 @@
                 <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
                    aria-expanded="false" data-display="static">
                     <i class="icon-shopping-cart"></i>
+{#                    <i class="fa-solid fa-cart-plus" style="font-size: 25px"></i>#}
                     <span class="cart-count">{{ cart | length }}</span>
                 </a>
 
