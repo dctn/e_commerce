@@ -12,15 +12,17 @@
             }
 
             .background {
-
                 background-position: right;
             }
 
-            .intro_video > .title > h3,
-            .intro_video > .content > h4 {
-                font-size: 1px;
-                color: black;
-            }
+
+        }
+
+        .intro_video > .title > h3 > i,
+        .intro_video > .content > h4 {
+            font-size: 1px;
+            color: sandybrown;
+            font-family: "Kumbh Sans", sans-serif;
         }
 
         #bg-red-rounded {
@@ -32,10 +34,12 @@
             border-radius: 50px;
             text-decoration: red underline;
         }
-        .btn-dark_1{
+
+        .btn-dark_1 {
             background-color: orange !important;
         }
-        .btn-dark_1:hover{
+
+        .btn-dark_1:hover {
             background-color: transparent !important;
             color: orange !important;
         }
@@ -121,12 +125,12 @@
                         <div class="banner col-lg-4  col-md-6 col-sm-6">
                             <img src="{% static 'own_img/sec_2.jpeg' %}">
                             <div class="intro">
-{#                                <div class="title">#}
-{#                                    <h3 class="text-dark bg-white">Festive Offers & Discounts</h3>#}
-{#                                </div>#}
-{#                                <div class="content">#}
-{#                                    <h4 class="text-dark bg-white">Decor Accents <br>& Indoor Styling</h4>#}
-{#                                </div>#}
+                                {#                                <div class="title">#}
+                                {#                                    <h3 class="text-dark bg-white">Festive Offers & Discounts</h3>#}
+                                {#                                </div>#}
+                                {#                                <div class="content">#}
+                                {#                                    <h4 class="text-dark bg-white">Decor Accents <br>& Indoor Styling</h4>#}
+                                {#                                </div>#}
                                 <div class="action ">
                                     <a href="{% url 'products' %}" class="text-dark">Shop Now</a>
                                 </div>
@@ -224,11 +228,13 @@
 
 
             <section class="video-banner">
-                <img src="{% static 'own_img/main_2.jpeg' %}" alt="">
+                <img src="{% static 'own_img/new/White FAith.jpg' %}" alt="">
 
                 <div class="intro video intro_video">
                     <div class="title">
-                        <h3 class=""><i>Elegant & Trendy</i></h3>
+                        <h3 class="">
+                            <i>Elegant & Trendy</i>
+                        </h3>
                     </div>
                     <div class="content">
                         <h4>Photo Frames &<br> Home Decor 2025</h4>
