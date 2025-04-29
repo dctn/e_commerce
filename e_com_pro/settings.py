@@ -30,9 +30,9 @@ SECRET_KEY = 'django-insecure-3b^6!pu6k5=&s#x^gi7l6^v*(^9mfhw3y+2^owx605$qgekv-e
 DEBUG = True
 
 if os.environ.get("ENVIRONMENT") == "production":
-    ALLOWED_HOSTS = ["ecommerce-production-30e6.up.railway.app","https://ecommerce-production-30e6.up.railway.app","www.elbencs.com","https://www.elbencs.com","elbencs.com","https://elbencs.com"]
+    ALLOWED_HOSTS = ["ecommerce-production-30e6.up.railway.app","www.elbencs.com","elbencs.com"]
     CSRF_TRUSTED_ORIGINS = ["https://ecommerce-production-30e6.up.railway.app","https://elbencs.com","https://www.elbencs.com"]
-    DEBUG = True
+    DEBUG = False
 else:
     ALLOWED_HOSTS = ["*"]
 
