@@ -104,3 +104,40 @@ INFO 2025-04-29 05:29:13,176 basehttp "GET /static/own_img/footer_logo.jpeg HTTP
 INFO 2025-04-29 05:29:13,180 basehttp "GET /static/assets/images/demos/demo-24/logo.png HTTP/1.1" 304 0
 INFO 2025-04-29 05:29:13,237 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 304 0
 INFO 2025-04-29 05:29:13,388 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:41,249 autoreload Watching for file changes with StatReloader
+INFO 2025-04-29 13:45:56,773 basehttp "GET / HTTP/1.1" 200 28577
+INFO 2025-04-29 13:45:56,980 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:56,992 basehttp "GET /static/assets/css/plugins/owl-carousel/owl.carousel.css HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,004 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,016 basehttp "GET /static/assets/css/style.css HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,025 basehttp "GET /static/own_img/sec_1.jpeg HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,023 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,031 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,026 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,030 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,058 basehttp "GET /static/own_img/new/Sar%2002.jpg HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,200 basehttp "GET /static/own_img/sec_2.jpeg HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,252 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+WARNING 2025-04-29 13:45:57,261 log Not Found: /media/product_images/pro_1_1.jpg
+WARNING 2025-04-29 13:45:57,262 basehttp "GET /media/product_images/pro_1_1.jpg HTTP/1.1" 404 6672
+INFO 2025-04-29 13:45:57,282 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,296 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,297 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,297 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,319 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,327 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,326 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,322 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,349 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,397 basehttp "GET /static/assets/js/main.js HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,398 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,420 basehttp "GET /static/assets/images/demos/demo-24/logo.png HTTP/1.1" 304 0
+WARNING 2025-04-29 13:45:57,443 log Not Found: /media/product_images/pro_3_1.jpg
+WARNING 2025-04-29 13:45:57,444 basehttp "GET /media/product_images/pro_3_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-04-29 13:45:57,433 log Not Found: /media/product_images/pro_2_1.jpg
+WARNING 2025-04-29 13:45:57,450 basehttp "GET /media/product_images/pro_2_1.jpg HTTP/1.1" 404 6672
+INFO 2025-04-29 13:45:57,472 basehttp "GET /static/own_img/video_img.jpeg HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,479 basehttp "GET /static/own_img/main_with.jpeg HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,481 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:57,539 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 304 0
+INFO 2025-04-29 13:45:58,410 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0

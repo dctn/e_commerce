@@ -32,7 +32,7 @@ DEBUG = True
 if os.environ.get("ENVIRONMENT") == "production":
     ALLOWED_HOSTS = ["ecommerce-production-30e6.up.railway.app","www.elbencs.com","elbencs.com"]
     CSRF_TRUSTED_ORIGINS = ["https://ecommerce-production-30e6.up.railway.app","https://elbencs.com","https://www.elbencs.com"]
-    DEBUG = False
+    DEBUG = True
 else:
     ALLOWED_HOSTS = ["*"]
 
