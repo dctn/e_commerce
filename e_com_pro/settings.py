@@ -32,7 +32,7 @@ DEBUG = True
 if os.environ.get("ENVIRONMENT") == "production":
     ALLOWED_HOSTS = ["ecommerce-production-30e6.up.railway.app","www.elbencs.com","elbencs.com"]
     CSRF_TRUSTED_ORIGINS = ["https://ecommerce-production-30e6.up.railway.app","https://elbencs.com","https://www.elbencs.com"]
-    DEBUG = False
+    DEBUG = True
 else:
     ALLOWED_HOSTS = ["*"]
 
@@ -245,3 +245,30 @@ WHITENOISE_AUTOREFRESH = True
 WHITENOISE_USE_FINDERS = True
 
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+        'file': {
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'django.log'),
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],  # Log to both console and file
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
+            'propagate': True,
+        },
+    },
+}
