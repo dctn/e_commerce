@@ -30,8 +30,8 @@ SECRET_KEY = os.environ.get("DJ_SECRET_KEY")
 DEBUG = True
 
 if os.environ.get("ENVIRONMENT") == "production":
-    ALLOWED_HOSTS = ["ecommerce-production-30e6.up.railway.app","www.elbencs.com","elbencs.com"]
-    CSRF_TRUSTED_ORIGINS = ["https://ecommerce-production-30e6.up.railway.app","https://elbencs.com","https://www.elbencs.com"]
+    ALLOWED_HOSTS = ["ecommerce-production-30e6.up.railway.app","www.elbencs.com","elbencs.com","ecommerce-production-0956.up.railway.app"]
+    CSRF_TRUSTED_ORIGINS = ["https://ecommerce-production-30e6.up.railway.app","https://elbencs.com","https://www.elbencs.com","https://ecommerce-production-0956.up.railway.app"]
     DEBUG = False
 else:
     ALLOWED_HOSTS = ["*"]

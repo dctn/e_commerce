@@ -11332,3 +11332,5 @@ INFO 2025-05-05 13:36:07,441 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1"
 INFO 2025-05-05 13:36:07,447 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
 INFO 2025-05-05 13:36:07,490 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
 INFO 2025-05-05 13:36:07,538 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-05 13:41:46,893 autoreload /home/stranger/PycharmProjects/e_com_pro/e_com_pro/settings.py changed, reloading.
+INFO 2025-05-05 13:41:48,255 autoreload Watching for file changes with StatReloader
