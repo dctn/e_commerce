@@ -5,19 +5,31 @@
     <style>
 
 
-        @media (max-width: 768px) {
+        @media (max-width: 550px) {
             .video-banner img {
                 width: 450px;
                 height: 300px;
             }
 
             .background {
-                background-position: top;
+                background-image: url("{% static 'own_img/mini_4.jpeg' %}") !important;
+                background-position: center;
             }
 
             .own_size {
                 font-size: 40px !important;
 
+            }
+
+            .down_margin {
+            }
+
+            .pc {
+                display: none;
+            }
+
+            .mobile {
+                display: block !important;
             }
 
         }
@@ -40,13 +52,14 @@
             text-decoration: red underline;
         }
 
-        .btn-dark_1 {
+        .btn-dark_1:hover {
             background-color: orange !important;
         }
 
-        .btn-dark_1:hover {
-            background-color: transparent !important;
-            color: orange !important;
+        .btn-dark_1 {
+            background-color: rgba(255, 255, 255, 0.5) !important;
+            color: grey !important;
+            border: none !important;
         }
 
         @font-face {
@@ -59,6 +72,7 @@
             font-weight: 10 !important;
         }
 
+
         .own_font_color {
             color: #7B5B48 !important;
         }
@@ -66,6 +80,46 @@
         .intro {
             background-color: transparent !important;
         }
+
+        .mobile {
+            display: none;
+        }
+
+        .background {
+            background-position: ;
+        }
+
+        .own_btn {
+            text-transform: capitalize;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            border-radius: 10px;
+            overflow: visible;
+        }
+
+        .own_btn:hover{
+            background-color: #4d0d0d;
+            color: whitesmoke;
+        }
+
+        .own_size {
+            font-size: 5rem !important;
+
+        }
+
+        .own_black {
+            width: 100%;
+            height: 100px;
+            background-color: #474747;
+        }
+
+
+         @media (min-width: 1190px) {
+             .own_left_margin {
+                 margin-left: 500px
+             }
+         }
 
         @media (min-width: 992px) {
             .intro_video {
@@ -79,7 +133,7 @@
 {% block content %}
 
     <div class="page-wrapper">
-        <div class="background" style="background-image: url({% static 'own_img/main_with.jpeg' %});">
+        <div class="background pc" style="background-image: url({% static 'own_img/test_mini.jpeg' %});">
 
             {% include 'includes/nav.html' %}
             <!-- End .header -->
@@ -88,19 +142,59 @@
             <div class="slider">
                 <div class="intro">
                     <div class="title">
-                        <h3 class="text-black-50 own_font own_font_color">Elegant Photo Frames & Home Decor</h3>
+                        <h3 class="text-black-50 own_font own_font_color own_left_margin">Elegant Photo Frames & Home Decor</h3>
                     </div>
                     <div class="content">
-                        <h4 class="text-black-50 own_font own_font_color"><i>
+                        <h4 class="text-black-50 own_font own_font_color own_left_margin "><i>
                         </i>2025 Collections Discover Our Latest</h4>
-                        <h5 id="intro_text" class="text-black-50 own_font own_font_color own_size">A Perfect Home Decor </h5>
+                        <h5 id="intro_text" class="text-black-50 own_font own_font_color own_size own_left_margin" style="">A Perfect Home
+                            Decor </h5>
                     </div>
-                    <div class="action">
-                        <a href="{% url 'products' %}">discover now</a>
+                    <div class="">
+                        <a href="{% url 'products' %}" class="btn own_btn own_left_margin">discover now</a>
                     </div>
                 </div>
                 <!-- <img src="own_img/main.jpg"> -->
             </div>
+        </div>
+
+        {# this is for mobile #}
+        <div class="background mobile" style="background-image: url({% static 'own_img/main_with.jpeg' %});">
+
+            {% include 'includes/nav.html' %}
+            <!-- End .header -->
+
+
+            <div class="slider">
+                <div class="intro">
+                    <div class="title">
+                        <br>
+                        <br>
+                        <br>
+
+                        <h3 class="text-black-50 own_font own_font_color"></h3>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="content">
+                        <h4 class="text-black-50 own_font own_font_color"><i>
+                        </i></h4>
+                        <h5 id="intro_text" class="text-black-50 own_font own_font_color own_size"></h5>
+                        <br>
+                        <br>
+                        <br>
+
+                    </div>
+
+                </div>
+                <!-- <img src="own_img/main.jpg"> -->
+            </div>
+            <div class=" text-center">
+                <a href="{% url 'products' %}" class="btn own_btn">discover now</a>
+            </div>
+
         </div>
 
 
@@ -114,20 +208,21 @@
 
             <section class="banners center">
                 <div class="container">
-                    <div class="row">
+                    <div class="row ">
                         <div class="banner col-lg-4 col-md-6 col-sm-6">
                             <img src="{% static 'own_img/sec_1.jpeg' %}">
                             <div class="intro">
                                 <div class="title">
-                                    <h3 class="text-dark bg-white">Online mega deal</h3>
+                                    <h3 class="text-dark "></h3>
                                 </div>
                                 <div class="content">
-                                    <h4 class="text-dark bg-white">Photo Frames &<br> Wall Art</h4>
+                                    <h4 class="text-dark "><br></h4>
                                 </div>
-                                <div class="action">
+                                <div class="action mt-15">
                                     <a href="{% url 'products' %}" class="text-dark btn-dark_1">Shop Now</a>
                                 </div>
                             </div>
+
                         </div>
 
                         <div class="banner percent col-lg-4 col-md-6 col-sm-6">
@@ -273,18 +368,12 @@
                 </div>
             </section>
 
-            <section class="subscribe">
 
-            </section>
-
-            <section class="blog mb-6">
-
-            </section>
-
-            <section class="instagram mb-3">
-
-            </section>
         </main>
+
+        <div class="own_black">
+
+        </div>
 
 
 
