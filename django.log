@@ -11334,3 +11334,8 @@ INFO 2025-05-05 13:36:07,490 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1"
 INFO 2025-05-05 13:36:07,538 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
 INFO 2025-05-05 13:41:46,893 autoreload /home/stranger/PycharmProjects/e_com_pro/e_com_pro/settings.py changed, reloading.
 INFO 2025-05-05 13:41:48,255 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-05 13:47:29,745 log Not Found: /media/product_images/hope_1.png
+WARNING 2025-05-05 13:47:29,746 basehttp "GET /media/product_images/hope_1.png HTTP/1.1" 404 6668
+INFO 2025-05-05 13:47:30,354 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-05 13:52:41,171 autoreload /home/stranger/PycharmProjects/e_com_pro/e_com_pro/settings.py changed, reloading.
+INFO 2025-05-05 13:52:41,884 autoreload Watching for file changes with StatReloader
