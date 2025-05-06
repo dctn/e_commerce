@@ -11528,3 +11528,816 @@ INFO 2025-05-05 14:33:05,213 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1"
 INFO 2025-05-05 14:33:05,255 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
 INFO 2025-05-05 14:33:05,316 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
 INFO 2025-05-05 14:33:05,405 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 12:57:00,649 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-06 12:57:07,309 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-06 12:57:07,326 log Bad Request: /
+WARNING 2025-05-06 12:57:07,329 basehttp "GET / HTTP/1.1" 400 143
+ERROR 2025-05-06 12:57:07,563 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-06 12:57:07,564 log Bad Request: /favicon.ico
+WARNING 2025-05-06 12:57:07,565 basehttp "GET /favicon.ico HTTP/1.1" 400 143
+ERROR 2025-05-06 12:57:30,196 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-06 12:57:30,198 log Bad Request: /
+WARNING 2025-05-06 12:57:30,199 basehttp "GET / HTTP/1.1" 400 143
+ERROR 2025-05-06 12:57:30,337 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-06 12:57:30,338 log Bad Request: /favicon.ico
+WARNING 2025-05-06 12:57:30,339 basehttp "GET /favicon.ico HTTP/1.1" 400 143
+ERROR 2025-05-06 12:57:32,060 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-06 12:57:32,062 log Bad Request: /
+WARNING 2025-05-06 12:57:32,063 basehttp "GET / HTTP/1.1" 400 143
+ERROR 2025-05-06 12:57:32,207 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-06 12:57:32,208 log Bad Request: /favicon.ico
+WARNING 2025-05-06 12:57:32,208 basehttp "GET /favicon.ico HTTP/1.1" 400 143
+ERROR 2025-05-06 12:57:50,494 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-06 12:57:50,496 log Bad Request: /
+WARNING 2025-05-06 12:57:50,498 basehttp "GET / HTTP/1.1" 400 143
+ERROR 2025-05-06 12:57:50,623 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-06 12:57:50,624 log Bad Request: /favicon.ico
+WARNING 2025-05-06 12:57:50,624 basehttp "GET /favicon.ico HTTP/1.1" 400 143
+INFO 2025-05-06 12:57:55,932 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-06 12:58:02,404 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-06 12:58:02,409 log Bad Request: /
+WARNING 2025-05-06 12:58:02,410 basehttp "GET / HTTP/1.1" 400 143
+ERROR 2025-05-06 12:58:02,555 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-06 12:58:02,558 log Bad Request: /favicon.ico
+WARNING 2025-05-06 12:58:02,561 basehttp "GET /favicon.ico HTTP/1.1" 400 143
+INFO 2025-05-06 12:58:44,319 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-06 12:58:51,152 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-06 12:58:51,157 log Bad Request: /
+WARNING 2025-05-06 12:58:51,159 basehttp "GET / HTTP/1.1" 400 143
+ERROR 2025-05-06 12:58:51,305 exception Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/middleware/security.py", line 28, in process_request
+    host = self.redirect_host or request.get_host()
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/stranger/PycharmProjects/e_com_pro/.venv/lib/python3.12/site-packages/django/http/request.py", line 186, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2025-05-06 12:58:51,306 log Bad Request: /favicon.ico
+WARNING 2025-05-06 12:58:51,306 basehttp "GET /favicon.ico HTTP/1.1" 400 143
+INFO 2025-05-06 12:59:41,493 autoreload /home/stranger/PycharmProjects/e_com_pro/e_com_pro/settings.py changed, reloading.
+INFO 2025-05-06 12:59:42,289 autoreload Watching for file changes with StatReloader
+INFO 2025-05-06 12:59:47,173 basehttp "GET / HTTP/1.1" 301 0
+INFO 2025-05-06 12:59:47,186 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-05-06 12:59:47,187 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 12:59:47,190 basehttp code 400, message Bad request version ('B^\x15\x84±bT')
+ERROR 2025-05-06 12:59:47,193 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 12:59:55,237 autoreload /home/stranger/PycharmProjects/e_com_pro/e_com_pro/settings.py changed, reloading.
+INFO 2025-05-06 12:59:56,033 autoreload Watching for file changes with StatReloader
+INFO 2025-05-06 13:00:38,856 autoreload Watching for file changes with StatReloader
+INFO 2025-05-06 13:00:48,488 basehttp code 400, message Bad request version ("É\x0fz\x18y)!t'")
+ERROR 2025-05-06 13:00:48,489 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:00:48,491 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00')
+ERROR 2025-05-06 13:00:48,491 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:01:28,715 basehttp code 400, message Bad request version ('>')
+ERROR 2025-05-06 13:01:28,716 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:01:28,720 basehttp code 400, message Bad request version ('@gOº\x8b')
+ERROR 2025-05-06 13:01:28,720 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:01:49,759 basehttp code 400, message Bad request version ('ãïd@)Ê5hgûÛ\x98ø±ÚçtÉºYzÝbÆá\x7f¾¥ú\x14/)\x00')
+ERROR 2025-05-06 13:01:49,760 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:01:49,763 basehttp code 400, message Bad request version ('£â\x07nHL¥\x86\x80@½')
+ERROR 2025-05-06 13:01:49,764 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:02:08,045 autoreload /home/stranger/PycharmProjects/e_com_pro/e_com_pro/settings.py changed, reloading.
+INFO 2025-05-06 13:02:08,850 autoreload Watching for file changes with StatReloader
+INFO 2025-05-06 13:02:13,236 basehttp code 400, message Bad request version ('\x99\\ÔGº\x02Íõ1ç8\x80NÚê4Ê}¹\x8esâÍ\x8c\x83Ä\x89ê¬')
+ERROR 2025-05-06 13:02:13,237 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:02:13,240 basehttp code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Sêê\x00\x00\x00\x12\x00\x00\x00')
+ERROR 2025-05-06 13:02:13,241 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:02:32,721 autoreload Watching for file changes with StatReloader
+INFO 2025-05-06 13:02:42,073 basehttp code 400, message Bad request version ('¸\x19\x89v')
+ERROR 2025-05-06 13:02:42,074 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:02:42,077 basehttp code 400, message Bad request version ('\x02h2\x08http/1.1ÿ\x01\x00\x01\x00\x00\x17\x00\x00\x00')
+ERROR 2025-05-06 13:02:42,078 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:02:54,640 basehttp code 400, message Bad request syntax ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03\x82Ætú¤')
+ERROR 2025-05-06 13:02:54,641 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:02:54,645 basehttp code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\x8a\x8a\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01DÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-05-06 13:02:54,646 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:03:02,114 autoreload /home/stranger/PycharmProjects/e_com_pro/e_com_pro/settings.py changed, reloading.
+INFO 2025-05-06 13:03:03,064 autoreload Watching for file changes with StatReloader
+INFO 2025-05-06 13:03:41,103 basehttp code 400, message Bad request version ("\x05'i\x88Îä!$ñ\x99\x96\x91")
+ERROR 2025-05-06 13:03:41,103 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:03:41,106 basehttp code 400, message Bad request version ('lÎ')
+ERROR 2025-05-06 13:03:41,107 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:04:00,751 basehttp "GET /admin/account/emailaddress/ HTTP/1.1" 302 0
+INFO 2025-05-06 13:04:01,090 basehttp "GET /admin/login/?next=/admin/account/emailaddress/ HTTP/1.1" 200 4226
+INFO 2025-05-06 13:04:01,222 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 16632
+INFO 2025-05-06 13:04:01,225 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:01,227 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:01,227 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22154
+INFO 2025-05-06 13:04:01,229 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:01,231 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:01,238 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+WARNING 2025-05-06 13:04:01,462 log Not Found: /favicon.ico
+WARNING 2025-05-06 13:04:01,462 basehttp "GET /favicon.ico HTTP/1.1" 404 6374
+INFO 2025-05-06 13:04:08,612 basehttp code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\x8a\x8a\x00\x00\x00+\x00\x07\x06ºº\x03\x04\x03\x03DÍ\x00\x05\x00\x03\x02h2ÿ\x01\x00\x01\x00\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-05-06 13:04:08,612 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:04:08,615 basehttp code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+ERROR 2025-05-06 13:04:08,616 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:04:19,230 basehttp code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93')
+ERROR 2025-05-06 13:04:19,232 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:04:19,240 basehttp code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93::\x00\x00\x00#\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x17\x00\x00\x00')
+ERROR 2025-05-06 13:04:19,242 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:04:28,984 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-05-06 13:04:29,215 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4184
+INFO 2025-05-06 13:04:29,344 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:29,348 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:29,349 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:29,352 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:29,356 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:29,357 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:29,382 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:36,543 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-05-06 13:04:37,371 basehttp "GET /admin/ HTTP/1.1" 200 18316
+INFO 2025-05-06 13:04:37,523 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:37,524 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:37,524 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:37,525 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:37,525 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:37,525 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:37,542 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:37,552 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:37,557 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:37,557 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-05-06 13:04:47,748 basehttp "GET /products/ HTTP/1.1" 200 22047
+INFO 2025-05-06 13:04:47,892 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:47,894 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:47,897 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:47,900 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:47,901 basehttp "GET /static/assets/css/style.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:47,904 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:47,909 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 304 0
+WARNING 2025-05-06 13:04:47,935 log Not Found: /media/product_images/pro_1_1.jpg
+WARNING 2025-05-06 13:04:47,936 log Not Found: /media/product_images/pro_2_1.jpg
+WARNING 2025-05-06 13:04:47,937 basehttp "GET /media/product_images/pro_1_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:04:47,938 basehttp "GET /media/product_images/pro_2_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:04:48,057 log Not Found: /media/product_images/pro_3_1.jpg
+WARNING 2025-05-06 13:04:48,057 basehttp "GET /media/product_images/pro_3_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:04:48,060 log Not Found: /media/product_images/hope_1.png
+WARNING 2025-05-06 13:04:48,063 basehttp "GET /media/product_images/hope_1.png HTTP/1.1" 404 6668
+INFO 2025-05-06 13:04:48,078 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:48,085 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:48,086 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+WARNING 2025-05-06 13:04:48,086 log Not Found: /media/product_images/ecom1.png
+WARNING 2025-05-06 13:04:48,086 basehttp "GET /media/product_images/ecom1.png HTTP/1.1" 404 6664
+INFO 2025-05-06 13:04:48,087 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:48,088 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:48,095 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:48,097 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:48,100 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:48,100 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:48,143 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:48,146 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:48,150 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:48,151 basehttp "GET /static/assets/js/main.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:48,204 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:48,396 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:48,403 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:48,453 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:48,490 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:04:52,268 basehttp code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063ºº\x00\x00\x00#\x00\x00\x00')
+ERROR 2025-05-06 13:04:52,269 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:04:52,271 basehttp code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063**\x00\x00\x00+\x00\x07\x06ÚÚ\x03\x04\x03\x03DÍ\x00\x05\x00\x03\x02h2\x00')
+ERROR 2025-05-06 13:04:52,272 basehttp You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-05-06 13:05:54,230 basehttp "GET / HTTP/1.1" 200 36921
+INFO 2025-05-06 13:05:54,366 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 202346
+INFO 2025-05-06 13:05:54,382 basehttp "GET /static/assets/css/style.css HTTP/1.1" 200 272428
+INFO 2025-05-06 13:05:54,383 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 200 6016
+INFO 2025-05-06 13:05:54,389 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 200 26051
+INFO 2025-05-06 13:05:54,393 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 200 16857
+INFO 2025-05-06 13:05:54,408 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 200 1111
+INFO 2025-05-06 13:05:54,416 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 200 1043
+INFO 2025-05-06 13:05:54,420 basehttp "GET /static/own_img/sec_1.jpeg HTTP/1.1" 200 163745
+INFO 2025-05-06 13:05:54,469 basehttp "GET /static/own_img/sec_2.jpeg HTTP/1.1" 200 106896
+INFO 2025-05-06 13:05:54,487 basehttp "GET /static/own_img/new/Sar%2002.jpg HTTP/1.1" 200 7184946
+WARNING 2025-05-06 13:05:54,534 log Not Found: /media/product_images/pro_1_1.jpg
+WARNING 2025-05-06 13:05:54,535 basehttp "GET /media/product_images/pro_1_1.jpg HTTP/1.1" 404 6672
+INFO 2025-05-06 13:05:54,560 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 200 88145
+INFO 2025-05-06 13:05:54,642 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 200 100914
+INFO 2025-05-06 13:05:54,664 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 200 2317
+INFO 2025-05-06 13:05:54,679 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 200 10275
+INFO 2025-05-06 13:05:54,690 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 200 44342
+INFO 2025-05-06 13:05:54,697 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 200 11736
+INFO 2025-05-06 13:05:54,698 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 200 4508
+INFO 2025-05-06 13:05:54,709 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 200 17255
+INFO 2025-05-06 13:05:54,714 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 200 4140
+INFO 2025-05-06 13:05:54,729 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 200 51756
+INFO 2025-05-06 13:05:54,729 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 200 20229
+INFO 2025-05-06 13:05:54,730 basehttp "GET /static/assets/js/main.js HTTP/1.1" 200 26530
+INFO 2025-05-06 13:05:54,733 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 200 1184
+WARNING 2025-05-06 13:05:54,757 log Not Found: /media/product_images/pro_2_1.jpg
+WARNING 2025-05-06 13:05:54,765 basehttp "GET /media/product_images/pro_2_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:05:54,769 log Not Found: /media/product_images/pro_3_1.jpg
+WARNING 2025-05-06 13:05:54,774 basehttp "GET /media/product_images/pro_3_1.jpg HTTP/1.1" 404 6672
+INFO 2025-05-06 13:05:54,802 basehttp "GET /static/own_img/video_img.jpeg HTTP/1.1" 200 80674
+INFO 2025-05-06 13:05:54,814 basehttp "GET /static/own_img/test_mini.jpeg HTTP/1.1" 200 233379
+WARNING 2025-05-06 13:05:54,817 log Not Found: /media/product_images/hope_1.png
+WARNING 2025-05-06 13:05:54,825 basehttp "GET /media/product_images/hope_1.png HTTP/1.1" 404 6668
+WARNING 2025-05-06 13:05:54,824 log Not Found: /media/product_images/pro_1_1.jpg
+WARNING 2025-05-06 13:05:54,826 basehttp "GET /media/product_images/pro_1_1.jpg HTTP/1.1" 404 6672
+INFO 2025-05-06 13:05:54,861 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 200 134912
+WARNING 2025-05-06 13:05:54,924 log Not Found: /media/product_images/pro_3_1.jpg
+WARNING 2025-05-06 13:05:54,929 basehttp "GET /media/product_images/pro_3_1.jpg HTTP/1.1" 404 6672
+INFO 2025-05-06 13:05:55,386 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 200 46384
+INFO 2025-05-06 13:05:55,394 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:05:55,460 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:05:55,497 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:21,950 basehttp "GET /about_us/ HTTP/1.1" 200 21258
+INFO 2025-05-06 13:07:22,028 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,046 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,047 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,049 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,051 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,052 basehttp "GET /static/assets/css/style.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,052 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,080 basehttp "GET /static/own_img/main/main-sm-2.jpeg HTTP/1.1" 200 43118
+INFO 2025-05-06 13:07:22,084 basehttp "GET /static/own_img/main/main-sm.jpeg HTTP/1.1" 200 35286
+INFO 2025-05-06 13:07:22,145 basehttp "GET /static/assets/images/testimonials/user-2.jpg HTTP/1.1" 200 4163
+INFO 2025-05-06 13:07:22,145 basehttp "GET /static/assets/images/testimonials/user-1.jpg HTTP/1.1" 200 3796
+INFO 2025-05-06 13:07:22,156 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,158 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,159 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,160 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,168 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,169 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,170 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,171 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,193 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,195 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,237 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,240 basehttp "GET /static/own_img/main.jpg HTTP/1.1" 200 124253
+INFO 2025-05-06 13:07:22,250 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,271 basehttp "GET /static/assets/js/main.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,273 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:07:22,479 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:03,951 basehttp "GET / HTTP/1.1" 200 36921
+INFO 2025-05-06 13:09:04,026 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,050 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,052 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,056 basehttp "GET /static/assets/css/style.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,059 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,060 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,063 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,078 basehttp "GET /static/own_img/sec_1.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,081 basehttp "GET /static/own_img/new/Sar%2002.jpg HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,140 basehttp "GET /static/own_img/sec_2.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,151 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,152 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+WARNING 2025-05-06 13:09:04,178 log Not Found: /media/product_images/pro_1_1.jpg
+INFO 2025-05-06 13:09:04,160 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,190 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,184 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,186 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 304 0
+WARNING 2025-05-06 13:09:04,186 basehttp "GET /media/product_images/pro_1_1.jpg HTTP/1.1" 404 6672
+INFO 2025-05-06 13:09:04,174 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,194 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,195 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,227 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,252 basehttp "GET /static/own_img/test_mini.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,259 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,262 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,260 basehttp "GET /static/assets/js/main.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:09:04,263 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 304 0
+WARNING 2025-05-06 13:09:04,284 log Not Found: /media/product_images/pro_2_1.jpg
+WARNING 2025-05-06 13:09:04,285 basehttp "GET /media/product_images/pro_2_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:09:04,309 log Not Found: /media/product_images/pro_3_1.jpg
+WARNING 2025-05-06 13:09:04,313 basehttp "GET /media/product_images/pro_3_1.jpg HTTP/1.1" 404 6672
+INFO 2025-05-06 13:09:04,320 basehttp "GET /static/own_img/video_img.jpeg HTTP/1.1" 304 0
+WARNING 2025-05-06 13:09:04,334 log Not Found: /media/product_images/hope_1.png
+WARNING 2025-05-06 13:09:04,336 basehttp "GET /media/product_images/hope_1.png HTTP/1.1" 404 6668
+INFO 2025-05-06 13:09:04,574 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:06,988 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:06,991 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:07,010 basehttp "GET /static/assets/css/style.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:07,039 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:07,027 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:07,037 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:07,039 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:07,029 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 304 0
+WARNING 2025-05-06 13:10:07,052 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-06 13:10:07,056 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6485
+WARNING 2025-05-06 13:10:07,413 log Not Found: /static/assets/css/demos/demo-24.css.map
+WARNING 2025-05-06 13:10:07,417 basehttp "GET /static/assets/css/demos/demo-24.css.map HTTP/1.1" 404 6458
+INFO 2025-05-06 13:10:07,419 basehttp - Broken pipe from ('127.0.0.1', 37958)
+WARNING 2025-05-06 13:10:07,461 log Not Found: /static/assets/css/plugins/magnific-popup/magnific-popup.css.map
+WARNING 2025-05-06 13:10:07,464 log Not Found: /static/assets/css/plugins/jquery.countdown.css.map
+WARNING 2025-05-06 13:10:07,464 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css.map HTTP/1.1" 404 6530
+WARNING 2025-05-06 13:10:07,463 log Not Found: /static/assets/css/skins/skin-demo-24.css.map
+WARNING 2025-05-06 13:10:07,468 basehttp "GET /static/assets/css/skins/skin-demo-24.css.map HTTP/1.1" 404 6473
+WARNING 2025-05-06 13:10:07,465 basehttp "GET /static/assets/css/plugins/jquery.countdown.css.map HTTP/1.1" 404 6491
+WARNING 2025-05-06 13:10:07,483 log Not Found: /static/assets/css/style.css.map
+WARNING 2025-05-06 13:10:07,485 basehttp "GET /static/assets/css/style.css.map HTTP/1.1" 404 6434
+INFO 2025-05-06 13:10:11,972 basehttp "GET /static/own_img/mini_4.jpeg HTTP/1.1" 200 103274
+INFO 2025-05-06 13:10:45,264 basehttp "GET / HTTP/1.1" 200 36980
+INFO 2025-05-06 13:10:45,375 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 200 1111
+INFO 2025-05-06 13:10:45,380 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 202346
+INFO 2025-05-06 13:10:45,391 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 200 6016
+INFO 2025-05-06 13:10:45,393 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 200 26051
+INFO 2025-05-06 13:10:45,395 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 200 1043
+INFO 2025-05-06 13:10:45,395 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 200 16857
+INFO 2025-05-06 13:10:45,397 basehttp "GET /static/assets/css/style.css HTTP/1.1" 200 272428
+WARNING 2025-05-06 13:10:45,449 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-06 13:10:45,450 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6485
+INFO 2025-05-06 13:10:45,459 basehttp "GET /static/own_img/sec_1.jpeg HTTP/1.1" 200 163745
+INFO 2025-05-06 13:10:45,497 basehttp "GET /static/own_img/sec_2.jpeg HTTP/1.1" 200 106896
+INFO 2025-05-06 13:10:45,521 basehttp "GET /static/own_img/new/Sar%2002.jpg HTTP/1.1" 200 7184946
+WARNING 2025-05-06 13:10:45,635 log Not Found: /static/assets/css/plugins/jquery.countdown.css.map
+WARNING 2025-05-06 13:10:45,639 log Not Found: /static/assets/css/plugins/magnific-popup/magnific-popup.css.map
+WARNING 2025-05-06 13:10:45,655 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css.map HTTP/1.1" 404 6530
+WARNING 2025-05-06 13:10:45,646 log Not Found: /static/assets/css/skins/skin-demo-24.css.map
+WARNING 2025-05-06 13:10:45,657 basehttp "GET /static/assets/css/skins/skin-demo-24.css.map HTTP/1.1" 404 6473
+WARNING 2025-05-06 13:10:45,647 basehttp "GET /static/assets/css/plugins/jquery.countdown.css.map HTTP/1.1" 404 6491
+WARNING 2025-05-06 13:10:45,678 log Not Found: /media/product_images/pro_1_1.jpg
+WARNING 2025-05-06 13:10:45,683 basehttp "GET /media/product_images/pro_1_1.jpg HTTP/1.1" 404 6672
+INFO 2025-05-06 13:10:45,746 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 200 88145
+INFO 2025-05-06 13:10:45,753 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 200 100914
+INFO 2025-05-06 13:10:45,780 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 200 2317
+INFO 2025-05-06 13:10:45,790 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 200 10275
+INFO 2025-05-06 13:10:45,807 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 200 4508
+INFO 2025-05-06 13:10:45,816 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 200 4140
+INFO 2025-05-06 13:10:45,814 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 200 44342
+INFO 2025-05-06 13:10:45,814 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 200 11736
+INFO 2025-05-06 13:10:45,882 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 200 17255
+INFO 2025-05-06 13:10:45,883 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 200 20229
+WARNING 2025-05-06 13:10:45,888 log Not Found: /static/assets/css/style.css.map
+WARNING 2025-05-06 13:10:45,896 basehttp "GET /static/assets/css/style.css.map HTTP/1.1" 404 6434
+INFO 2025-05-06 13:10:45,893 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 200 134912
+INFO 2025-05-06 13:10:45,895 basehttp "GET /static/assets/js/main.js HTTP/1.1" 200 26530
+WARNING 2025-05-06 13:10:45,917 log Not Found: /static/assets/css/demos/demo-24.css.map
+WARNING 2025-05-06 13:10:45,942 basehttp "GET /static/assets/css/demos/demo-24.css.map HTTP/1.1" 404 6458
+WARNING 2025-05-06 13:10:45,957 log Not Found: /media/product_images/pro_2_1.jpg
+INFO 2025-05-06 13:10:45,962 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 200 51756
+WARNING 2025-05-06 13:10:45,971 basehttp "GET /media/product_images/pro_2_1.jpg HTTP/1.1" 404 6672
+INFO 2025-05-06 13:10:45,971 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 200 1184
+WARNING 2025-05-06 13:10:45,993 log Not Found: /media/product_images/hope_1.png
+WARNING 2025-05-06 13:10:45,994 basehttp "GET /media/product_images/hope_1.png HTTP/1.1" 404 6668
+WARNING 2025-05-06 13:10:45,978 log Not Found: /media/product_images/pro_3_1.jpg
+INFO 2025-05-06 13:10:45,981 basehttp "GET /static/own_img/video_img.jpeg HTTP/1.1" 200 80674
+WARNING 2025-05-06 13:10:46,018 basehttp "GET /media/product_images/pro_3_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:10:46,022 log Not Found: /media/product_images/pro_1_1.jpg
+INFO 2025-05-06 13:10:46,025 basehttp "GET /static/own_img/mini_4.jpeg HTTP/1.1" 200 103274
+WARNING 2025-05-06 13:10:46,027 basehttp "GET /media/product_images/pro_1_1.jpg HTTP/1.1" 404 6672
+INFO 2025-05-06 13:10:46,541 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:46,547 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 200 46384
+INFO 2025-05-06 13:10:46,671 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:46,746 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:51,783 basehttp "GET /products/ HTTP/1.1" 200 22047
+WARNING 2025-05-06 13:10:51,939 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-06 13:10:51,940 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6485
+INFO 2025-05-06 13:10:51,958 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:51,959 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:51,960 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:51,960 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:51,961 basehttp "GET /static/assets/css/style.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:51,961 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:51,980 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 304 0
+WARNING 2025-05-06 13:10:52,041 log Not Found: /media/product_images/pro_1_1.jpg
+WARNING 2025-05-06 13:10:52,041 basehttp "GET /media/product_images/pro_1_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:10:52,042 log Not Found: /media/product_images/pro_2_1.jpg
+WARNING 2025-05-06 13:10:52,044 basehttp "GET /media/product_images/pro_2_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:10:52,236 log Not Found: /media/product_images/pro_3_1.jpg
+WARNING 2025-05-06 13:10:52,244 log Not Found: /static/assets/css/plugins/magnific-popup/magnific-popup.css.map
+WARNING 2025-05-06 13:10:52,277 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css.map HTTP/1.1" 404 6530
+WARNING 2025-05-06 13:10:52,247 log Not Found: /static/assets/css/skins/skin-demo-24.css.map
+WARNING 2025-05-06 13:10:52,278 basehttp "GET /static/assets/css/skins/skin-demo-24.css.map HTTP/1.1" 404 6473
+WARNING 2025-05-06 13:10:52,272 basehttp "GET /media/product_images/pro_3_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:10:52,267 log Not Found: /media/product_images/hope_1.png
+WARNING 2025-05-06 13:10:52,280 basehttp "GET /media/product_images/hope_1.png HTTP/1.1" 404 6668
+WARNING 2025-05-06 13:10:52,272 log Not Found: /static/assets/css/plugins/jquery.countdown.css.map
+WARNING 2025-05-06 13:10:52,301 basehttp "GET /static/assets/css/plugins/jquery.countdown.css.map HTTP/1.1" 404 6491
+WARNING 2025-05-06 13:10:52,297 log Not Found: /static/assets/css/style.css.map
+WARNING 2025-05-06 13:10:52,304 basehttp "GET /static/assets/css/style.css.map HTTP/1.1" 404 6434
+WARNING 2025-05-06 13:10:52,301 log Not Found: /static/assets/css/demos/demo-24.css.map
+WARNING 2025-05-06 13:10:52,308 basehttp "GET /static/assets/css/demos/demo-24.css.map HTTP/1.1" 404 6458
+INFO 2025-05-06 13:10:52,337 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 304 0
+WARNING 2025-05-06 13:10:52,338 log Not Found: /media/product_images/ecom1.png
+WARNING 2025-05-06 13:10:52,338 basehttp "GET /media/product_images/ecom1.png HTTP/1.1" 404 6664
+INFO 2025-05-06 13:10:52,339 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:52,341 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:52,342 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:52,344 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:52,353 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:52,355 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:52,356 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:52,414 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:52,415 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:52,428 basehttp "GET /static/assets/js/main.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:52,431 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:52,433 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:52,487 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:52,927 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:59,236 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+WARNING 2025-05-06 13:10:59,288 log Not Found: /static/assets/css/plugins/magnific-popup/magnific-popup.css.map
+WARNING 2025-05-06 13:10:59,309 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css.map HTTP/1.1" 404 6530
+WARNING 2025-05-06 13:10:59,319 log Not Found: /static/assets/css/demos/demo-24.css.map
+WARNING 2025-05-06 13:10:59,347 basehttp "GET /static/assets/css/demos/demo-24.css.map HTTP/1.1" 404 6458
+WARNING 2025-05-06 13:10:59,330 log Not Found: /static/assets/css/skins/skin-demo-24.css.map
+WARNING 2025-05-06 13:10:59,362 basehttp "GET /static/assets/css/skins/skin-demo-24.css.map HTTP/1.1" 404 6473
+WARNING 2025-05-06 13:10:59,346 log Not Found: /static/assets/css/style.css.map
+WARNING 2025-05-06 13:10:59,370 basehttp "GET /static/assets/css/style.css.map HTTP/1.1" 404 6434
+WARNING 2025-05-06 13:10:59,325 log Not Found: /static/assets/css/plugins/jquery.countdown.css.map
+WARNING 2025-05-06 13:10:59,372 basehttp "GET /static/assets/css/plugins/jquery.countdown.css.map HTTP/1.1" 404 6491
+WARNING 2025-05-06 13:10:59,364 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-06 13:10:59,377 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6485
+INFO 2025-05-06 13:10:59,368 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:59,369 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:59,369 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:59,405 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:59,401 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:59,407 basehttp "GET /static/assets/css/style.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:59,408 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:10:59,430 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 304 0
+WARNING 2025-05-06 13:10:59,471 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-06 13:10:59,475 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6485
+WARNING 2025-05-06 13:10:59,563 log Not Found: /static/assets/css/style.css.map
+WARNING 2025-05-06 13:10:59,564 basehttp "GET /static/assets/css/style.css.map HTTP/1.1" 404 6434
+WARNING 2025-05-06 13:10:59,587 log Not Found: /static/assets/css/plugins/magnific-popup/magnific-popup.css.map
+WARNING 2025-05-06 13:10:59,603 log Not Found: /static/assets/css/plugins/jquery.countdown.css.map
+WARNING 2025-05-06 13:10:59,625 basehttp "GET /static/assets/css/plugins/jquery.countdown.css.map HTTP/1.1" 404 6491
+WARNING 2025-05-06 13:10:59,624 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css.map HTTP/1.1" 404 6530
+WARNING 2025-05-06 13:10:59,627 log Not Found: /static/assets/css/demos/demo-24.css.map
+WARNING 2025-05-06 13:10:59,633 basehttp "GET /static/assets/css/demos/demo-24.css.map HTTP/1.1" 404 6458
+WARNING 2025-05-06 13:10:59,633 log Not Found: /static/assets/css/skins/skin-demo-24.css.map
+WARNING 2025-05-06 13:10:59,634 basehttp "GET /static/assets/css/skins/skin-demo-24.css.map HTTP/1.1" 404 6473
+INFO 2025-05-06 13:11:05,656 basehttp "GET /static/own_img/test_mini.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:11:40,675 basehttp "GET / HTTP/1.1" 200 36945
+WARNING 2025-05-06 13:11:40,808 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-06 13:11:40,814 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6485
+INFO 2025-05-06 13:11:40,816 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 200 6016
+INFO 2025-05-06 13:11:40,822 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 200 1111
+INFO 2025-05-06 13:11:40,818 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 202346
+INFO 2025-05-06 13:11:40,835 basehttp "GET /static/assets/css/style.css HTTP/1.1" 200 272428
+INFO 2025-05-06 13:11:40,841 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 200 26051
+INFO 2025-05-06 13:11:40,854 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 200 16857
+INFO 2025-05-06 13:11:40,854 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 200 1043
+INFO 2025-05-06 13:11:40,858 basehttp "GET /static/own_img/sec_1.jpeg HTTP/1.1" 200 163745
+INFO 2025-05-06 13:11:40,890 basehttp "GET /static/own_img/new/Sar%2002.jpg HTTP/1.1" 200 7184946
+INFO 2025-05-06 13:11:40,918 basehttp "GET /static/own_img/sec_2.jpeg HTTP/1.1" 200 106896
+WARNING 2025-05-06 13:11:40,974 log Not Found: /media/product_images/pro_1_1.jpg
+WARNING 2025-05-06 13:11:40,978 basehttp "GET /media/product_images/pro_1_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:11:41,017 log Not Found: /static/assets/css/skins/skin-demo-24.css.map
+INFO 2025-05-06 13:11:41,023 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 200 88145
+WARNING 2025-05-06 13:11:41,031 basehttp "GET /static/assets/css/skins/skin-demo-24.css.map HTTP/1.1" 404 6473
+WARNING 2025-05-06 13:11:41,022 log Not Found: /static/assets/css/plugins/jquery.countdown.css.map
+WARNING 2025-05-06 13:11:41,033 basehttp "GET /static/assets/css/plugins/jquery.countdown.css.map HTTP/1.1" 404 6491
+WARNING 2025-05-06 13:11:41,036 log Not Found: /static/assets/css/plugins/magnific-popup/magnific-popup.css.map
+WARNING 2025-05-06 13:11:41,038 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css.map HTTP/1.1" 404 6530
+INFO 2025-05-06 13:11:41,102 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 200 100914
+WARNING 2025-05-06 13:11:41,161 log Not Found: /static/assets/css/demos/demo-24.css.map
+WARNING 2025-05-06 13:11:41,161 basehttp "GET /static/assets/css/demos/demo-24.css.map HTTP/1.1" 404 6458
+WARNING 2025-05-06 13:11:41,173 log Not Found: /static/assets/css/style.css.map
+WARNING 2025-05-06 13:11:41,176 basehttp "GET /static/assets/css/style.css.map HTTP/1.1" 404 6434
+INFO 2025-05-06 13:11:41,260 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 200 2317
+INFO 2025-05-06 13:11:41,290 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 200 4508
+INFO 2025-05-06 13:11:41,293 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 200 44342
+INFO 2025-05-06 13:11:41,290 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 200 10275
+INFO 2025-05-06 13:11:41,313 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 200 11736
+INFO 2025-05-06 13:11:41,327 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 200 17255
+INFO 2025-05-06 13:11:41,332 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 200 4140
+INFO 2025-05-06 13:11:41,334 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 200 20229
+INFO 2025-05-06 13:11:41,351 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 200 51756
+INFO 2025-05-06 13:11:41,341 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 200 1184
+INFO 2025-05-06 13:11:41,349 basehttp "GET /static/assets/js/main.js HTTP/1.1" 200 26530
+WARNING 2025-05-06 13:11:41,364 log Not Found: /media/product_images/pro_2_1.jpg
+WARNING 2025-05-06 13:11:41,364 basehttp "GET /media/product_images/pro_2_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:11:41,376 log Not Found: /media/product_images/pro_3_1.jpg
+WARNING 2025-05-06 13:11:41,377 basehttp "GET /media/product_images/pro_3_1.jpg HTTP/1.1" 404 6672
+INFO 2025-05-06 13:11:41,413 basehttp "GET /static/own_img/video_img.jpeg HTTP/1.1" 200 80674
+INFO 2025-05-06 13:11:41,415 basehttp "GET /static/own_img/mini_4.jpeg HTTP/1.1" 200 103274
+WARNING 2025-05-06 13:11:41,459 log Not Found: /media/product_images/hope_1.png
+WARNING 2025-05-06 13:11:41,471 basehttp "GET /media/product_images/hope_1.png HTTP/1.1" 404 6668
+INFO 2025-05-06 13:11:41,424 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 200 134912
+WARNING 2025-05-06 13:11:41,474 log Not Found: /media/product_images/pro_1_1.jpg
+WARNING 2025-05-06 13:11:41,476 basehttp "GET /media/product_images/pro_1_1.jpg HTTP/1.1" 404 6672
+INFO 2025-05-06 13:11:41,944 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 200 46384
+INFO 2025-05-06 13:11:41,949 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:11:42,060 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:11:42,205 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:12:32,812 basehttp "GET /static/own_img/test_mini.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:12:38,044 basehttp "GET / HTTP/1.1" 200 36969
+INFO 2025-05-06 13:12:38,163 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 202346
+WARNING 2025-05-06 13:12:38,198 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-06 13:12:38,203 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6485
+INFO 2025-05-06 13:12:38,201 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 200 26051
+INFO 2025-05-06 13:12:38,204 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 200 6016
+INFO 2025-05-06 13:12:38,205 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 200 1111
+INFO 2025-05-06 13:12:38,203 basehttp "GET /static/assets/css/style.css HTTP/1.1" 200 272428
+INFO 2025-05-06 13:12:38,215 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 200 16857
+INFO 2025-05-06 13:12:38,231 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 200 1043
+INFO 2025-05-06 13:12:38,236 basehttp "GET /static/own_img/sec_1.jpeg HTTP/1.1" 200 163745
+INFO 2025-05-06 13:12:38,287 basehttp "GET /static/own_img/new/Sar%2002.jpg HTTP/1.1" 200 7184946
+INFO 2025-05-06 13:12:38,292 basehttp "GET /static/own_img/sec_2.jpeg HTTP/1.1" 200 106896
+WARNING 2025-05-06 13:12:38,370 log Not Found: /media/product_images/pro_1_1.jpg
+WARNING 2025-05-06 13:12:38,371 basehttp "GET /media/product_images/pro_1_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:12:38,441 log Not Found: /static/assets/css/plugins/magnific-popup/magnific-popup.css.map
+WARNING 2025-05-06 13:12:38,455 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css.map HTTP/1.1" 404 6530
+INFO 2025-05-06 13:12:38,447 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 200 88145
+WARNING 2025-05-06 13:12:38,458 log Not Found: /static/assets/css/skins/skin-demo-24.css.map
+WARNING 2025-05-06 13:12:38,463 log Not Found: /static/assets/css/plugins/jquery.countdown.css.map
+WARNING 2025-05-06 13:12:38,465 basehttp "GET /static/assets/css/skins/skin-demo-24.css.map HTTP/1.1" 404 6473
+WARNING 2025-05-06 13:12:38,466 basehttp "GET /static/assets/css/plugins/jquery.countdown.css.map HTTP/1.1" 404 6491
+INFO 2025-05-06 13:12:38,491 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 200 100914
+WARNING 2025-05-06 13:12:38,515 log Not Found: /static/assets/css/demos/demo-24.css.map
+WARNING 2025-05-06 13:12:38,517 log Not Found: /static/assets/css/style.css.map
+WARNING 2025-05-06 13:12:38,519 basehttp "GET /static/assets/css/style.css.map HTTP/1.1" 404 6434
+WARNING 2025-05-06 13:12:38,519 basehttp "GET /static/assets/css/demos/demo-24.css.map HTTP/1.1" 404 6458
+INFO 2025-05-06 13:12:38,592 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 200 2317
+INFO 2025-05-06 13:12:38,598 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 200 10275
+INFO 2025-05-06 13:12:38,601 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 200 44342
+INFO 2025-05-06 13:12:38,604 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 200 4508
+INFO 2025-05-06 13:12:38,621 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 200 11736
+INFO 2025-05-06 13:12:38,637 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 200 4140
+INFO 2025-05-06 13:12:38,638 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 200 17255
+INFO 2025-05-06 13:12:38,656 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 200 1184
+INFO 2025-05-06 13:12:38,658 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 200 20229
+INFO 2025-05-06 13:12:38,660 basehttp "GET /static/assets/js/main.js HTTP/1.1" 200 26530
+INFO 2025-05-06 13:12:38,677 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 200 134912
+INFO 2025-05-06 13:12:38,701 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 200 51756
+INFO 2025-05-06 13:12:38,731 basehttp "GET /static/own_img/video_img.jpeg HTTP/1.1" 200 80674
+WARNING 2025-05-06 13:12:38,746 log Not Found: /media/product_images/pro_3_1.jpg
+WARNING 2025-05-06 13:12:38,756 basehttp "GET /media/product_images/pro_3_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:12:38,754 log Not Found: /media/product_images/hope_1.png
+INFO 2025-05-06 13:12:38,777 basehttp "GET /static/own_img/test_mini.jpeg HTTP/1.1" 200 233379
+WARNING 2025-05-06 13:12:38,748 log Not Found: /media/product_images/pro_2_1.jpg
+WARNING 2025-05-06 13:12:38,777 basehttp "GET /media/product_images/hope_1.png HTTP/1.1" 404 6668
+WARNING 2025-05-06 13:12:38,781 basehttp "GET /media/product_images/pro_2_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:12:38,779 log Not Found: /media/product_images/pro_1_1.jpg
+WARNING 2025-05-06 13:12:38,786 basehttp "GET /media/product_images/pro_1_1.jpg HTTP/1.1" 404 6672
+INFO 2025-05-06 13:12:39,414 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 200 46384
+INFO 2025-05-06 13:12:39,435 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:12:39,494 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:12:39,584 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:12:45,832 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:12:45,833 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:12:45,834 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:12:45,835 basehttp "GET /static/assets/css/style.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:12:45,840 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:12:45,840 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:12:45,840 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:12:45,853 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 304 0
+WARNING 2025-05-06 13:12:45,875 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-06 13:12:45,876 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6485
+WARNING 2025-05-06 13:12:46,002 log Not Found: /static/assets/css/plugins/magnific-popup/magnific-popup.css.map
+WARNING 2025-05-06 13:12:46,020 log Not Found: /static/assets/css/style.css.map
+WARNING 2025-05-06 13:12:46,027 log Not Found: /static/assets/css/skins/skin-demo-24.css.map
+WARNING 2025-05-06 13:12:46,032 log Not Found: /static/assets/css/demos/demo-24.css.map
+WARNING 2025-05-06 13:12:46,039 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css.map HTTP/1.1" 404 6530
+WARNING 2025-05-06 13:12:46,040 basehttp "GET /static/assets/css/skins/skin-demo-24.css.map HTTP/1.1" 404 6473
+WARNING 2025-05-06 13:12:46,042 log Not Found: /static/assets/css/plugins/jquery.countdown.css.map
+WARNING 2025-05-06 13:12:46,045 basehttp "GET /static/assets/css/plugins/jquery.countdown.css.map HTTP/1.1" 404 6491
+WARNING 2025-05-06 13:12:46,042 basehttp "GET /static/assets/css/style.css.map HTTP/1.1" 404 6434
+WARNING 2025-05-06 13:12:46,041 basehttp "GET /static/assets/css/demos/demo-24.css.map HTTP/1.1" 404 6458
+INFO 2025-05-06 13:13:04,746 basehttp "GET / HTTP/1.1" 200 37027
+INFO 2025-05-06 13:13:04,796 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 202346
+INFO 2025-05-06 13:13:04,838 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 200 1111
+INFO 2025-05-06 13:13:04,844 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 200 6016
+INFO 2025-05-06 13:13:04,855 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 200 16857
+INFO 2025-05-06 13:13:04,847 basehttp "GET /static/assets/css/style.css HTTP/1.1" 200 272428
+INFO 2025-05-06 13:13:04,851 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 200 26051
+INFO 2025-05-06 13:13:04,852 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 200 1043
+INFO 2025-05-06 13:13:04,889 basehttp "GET /static/own_img/sec_1.jpeg HTTP/1.1" 200 163745
+INFO 2025-05-06 13:13:04,947 basehttp "GET /static/own_img/sec_2.jpeg HTTP/1.1" 200 106896
+INFO 2025-05-06 13:13:04,957 basehttp "GET /static/own_img/new/Sar%2002.jpg HTTP/1.1" 200 7184946
+WARNING 2025-05-06 13:13:04,968 log Not Found: /media/product_images/pro_1_1.jpg
+WARNING 2025-05-06 13:13:04,969 basehttp "GET /media/product_images/pro_1_1.jpg HTTP/1.1" 404 6672
+INFO 2025-05-06 13:13:05,037 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 200 88145
+INFO 2025-05-06 13:13:05,053 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 200 100914
+INFO 2025-05-06 13:13:05,076 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 200 4508
+INFO 2025-05-06 13:13:05,081 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 200 44342
+INFO 2025-05-06 13:13:05,079 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 200 10275
+INFO 2025-05-06 13:13:05,079 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 200 2317
+INFO 2025-05-06 13:13:05,084 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 200 11736
+INFO 2025-05-06 13:13:05,097 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 200 4140
+INFO 2025-05-06 13:13:05,100 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 200 20229
+INFO 2025-05-06 13:13:05,104 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 200 1184
+INFO 2025-05-06 13:13:05,102 basehttp "GET /static/assets/js/main.js HTTP/1.1" 200 26530
+INFO 2025-05-06 13:13:05,102 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 200 17255
+INFO 2025-05-06 13:13:05,127 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 200 134912
+INFO 2025-05-06 13:13:05,135 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 200 51756
+INFO 2025-05-06 13:13:05,184 basehttp "GET /static/own_img/test_mini.jpeg HTTP/1.1" 200 233379
+WARNING 2025-05-06 13:13:05,206 log Not Found: /media/product_images/pro_2_1.jpg
+WARNING 2025-05-06 13:13:05,224 basehttp "GET /media/product_images/pro_2_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:13:05,215 log Not Found: /media/product_images/pro_1_1.jpg
+WARNING 2025-05-06 13:13:05,226 basehttp "GET /media/product_images/pro_1_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:13:05,217 log Not Found: /media/product_images/pro_3_1.jpg
+WARNING 2025-05-06 13:13:05,229 basehttp "GET /media/product_images/pro_3_1.jpg HTTP/1.1" 404 6672
+INFO 2025-05-06 13:13:05,208 basehttp "GET /static/own_img/video_img.jpeg HTTP/1.1" 200 80674
+WARNING 2025-05-06 13:13:05,223 log Not Found: /media/product_images/hope_1.png
+WARNING 2025-05-06 13:13:05,230 basehttp "GET /media/product_images/hope_1.png HTTP/1.1" 404 6668
+INFO 2025-05-06 13:13:05,543 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 200 46384
+INFO 2025-05-06 13:13:05,546 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:05,581 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:05,672 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:11,710 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:11,716 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:11,720 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:11,723 basehttp "GET /static/assets/css/style.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:11,725 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:11,728 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:11,730 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:11,734 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+WARNING 2025-05-06 13:13:11,769 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-06 13:13:11,770 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6485
+WARNING 2025-05-06 13:13:12,137 log Not Found: /static/assets/css/style.css.map
+WARNING 2025-05-06 13:13:12,149 log Not Found: /static/assets/css/plugins/jquery.countdown.css.map
+WARNING 2025-05-06 13:13:12,166 log Not Found: /static/assets/css/plugins/magnific-popup/magnific-popup.css.map
+WARNING 2025-05-06 13:13:12,173 log Not Found: /static/assets/css/skins/skin-demo-24.css.map
+WARNING 2025-05-06 13:13:12,173 basehttp "GET /static/assets/css/style.css.map HTTP/1.1" 404 6434
+WARNING 2025-05-06 13:13:12,175 basehttp "GET /static/assets/css/plugins/jquery.countdown.css.map HTTP/1.1" 404 6491
+WARNING 2025-05-06 13:13:12,184 log Not Found: /static/assets/css/demos/demo-24.css.map
+WARNING 2025-05-06 13:13:12,185 basehttp "GET /static/assets/css/skins/skin-demo-24.css.map HTTP/1.1" 404 6473
+WARNING 2025-05-06 13:13:12,186 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css.map HTTP/1.1" 404 6530
+WARNING 2025-05-06 13:13:12,191 basehttp "GET /static/assets/css/demos/demo-24.css.map HTTP/1.1" 404 6458
+INFO 2025-05-06 13:13:13,208 basehttp "GET /static/own_img/mini_4.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,154 basehttp "GET /products/ HTTP/1.1" 200 22047
+WARNING 2025-05-06 13:13:21,287 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-06 13:13:21,288 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6485
+INFO 2025-05-06 13:13:21,317 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,334 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,338 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,352 basehttp "GET /static/assets/css/style.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,343 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,343 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,353 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 304 0
+WARNING 2025-05-06 13:13:21,384 log Not Found: /media/product_images/pro_1_1.jpg
+WARNING 2025-05-06 13:13:21,401 basehttp "GET /media/product_images/pro_1_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:13:21,403 log Not Found: /media/product_images/pro_2_1.jpg
+WARNING 2025-05-06 13:13:21,404 basehttp "GET /media/product_images/pro_2_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:13:21,428 log Not Found: /static/assets/css/plugins/magnific-popup/magnific-popup.css.map
+WARNING 2025-05-06 13:13:21,437 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css.map HTTP/1.1" 404 6530
+WARNING 2025-05-06 13:13:21,446 log Not Found: /static/assets/css/skins/skin-demo-24.css.map
+WARNING 2025-05-06 13:13:21,454 basehttp "GET /static/assets/css/skins/skin-demo-24.css.map HTTP/1.1" 404 6473
+WARNING 2025-05-06 13:13:21,450 log Not Found: /static/assets/css/plugins/jquery.countdown.css.map
+WARNING 2025-05-06 13:13:21,455 basehttp "GET /static/assets/css/plugins/jquery.countdown.css.map HTTP/1.1" 404 6491
+WARNING 2025-05-06 13:13:21,499 log Not Found: /media/product_images/hope_1.png
+WARNING 2025-05-06 13:13:21,517 log Not Found: /static/assets/css/style.css.map
+WARNING 2025-05-06 13:13:21,534 basehttp "GET /static/assets/css/style.css.map HTTP/1.1" 404 6434
+WARNING 2025-05-06 13:13:21,519 basehttp "GET /media/product_images/hope_1.png HTTP/1.1" 404 6668
+WARNING 2025-05-06 13:13:21,520 log Not Found: /media/product_images/pro_3_1.jpg
+WARNING 2025-05-06 13:13:21,539 basehttp "GET /media/product_images/pro_3_1.jpg HTTP/1.1" 404 6672
+WARNING 2025-05-06 13:13:21,533 log Not Found: /static/assets/css/demos/demo-24.css.map
+WARNING 2025-05-06 13:13:21,545 basehttp "GET /static/assets/css/demos/demo-24.css.map HTTP/1.1" 404 6458
+WARNING 2025-05-06 13:13:21,603 log Not Found: /media/product_images/ecom1.png
+WARNING 2025-05-06 13:13:21,603 basehttp "GET /media/product_images/ecom1.png HTTP/1.1" 404 6664
+INFO 2025-05-06 13:13:21,616 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,620 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,621 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,622 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,624 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,631 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,634 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,635 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,637 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,660 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,668 basehttp "GET /static/assets/js/main.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,676 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,694 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:21,699 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 304 0
+INFO 2025-05-06 13:13:22,216 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
