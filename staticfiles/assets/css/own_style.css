@@ -67,3 +67,7 @@ header {
 .ruppe {
     font-family: 'Roboto', 'Arial', 'Noto Sans', sans-serif;
 }
+
+.logo {
+    text-align: center;
+}
