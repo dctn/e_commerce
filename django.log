@@ -22549,3 +22549,5 @@ INFO 2025-05-10 15:35:31,022 autoreload /home/stranger/PycharmProjects/e_com_pro
 INFO 2025-05-10 15:35:32,582 autoreload Watching for file changes with StatReloader
 INFO 2025-05-10 15:35:46,919 autoreload /home/stranger/PycharmProjects/e_com_pro/e_com_pro/settings.py changed, reloading.
 INFO 2025-05-10 15:35:54,887 autoreload Watching for file changes with StatReloader
+INFO 2025-05-10 16:21:05,176 autoreload Watching for file changes with StatReloader
+INFO 2025-05-10 16:21:13,952 autoreload Watching for file changes with StatReloader

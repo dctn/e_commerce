@@ -32,7 +32,7 @@ DEBUG = True
 if os.environ.get("ENVIRONMENT") == "production":
     ALLOWED_HOSTS = ["ecommerce-production-30e6.up.railway.app","www.elbencs.com","elbencs.com","ecommerce-production-0956.up.railway.app"]
     CSRF_TRUSTED_ORIGINS = ["https://ecommerce-production-30e6.up.railway.app","https://elbencs.com","https://www.elbencs.com","https://ecommerce-production-0956.up.railway.app"]
-    DEBUG = True
+    DEBUG = False
 else:
     ALLOWED_HOSTS = ["*"]
 
@@ -213,8 +213,15 @@ STATICFILES_DIRS = [ BASE_DIR / "static"]
 STATIC_ROOT = BASE_DIR / "staticfiles"
 # STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
-MEDIA_URL = "media/"
-MEDIA_ROOT = os.path.join(BASE_DIR,"media")
+MEDIA_URL = "/media/"
+
+
+if os.environ.get('production', False):
+    # This path should match the mount path you set in Railway
+    MEDIA_ROOT = "/app/media"
+else:
+    # Local development media path
+    MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
