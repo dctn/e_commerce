@@ -44,6 +44,20 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            integrity="sha512-y0cR6L0jz7M9Y7pKs1hIP+TmLZj/7KxVLOu3sA7T8Xmw5HzLlR2kYgshf5cJX+V0qgFZj0b7qCE+kwfIR48sfA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+
+
     {% block head %}
 
     {% endblock %}
@@ -165,11 +179,11 @@
                 <li>
                     <a href="{% url 'products' %}">SHOP</a>
 
-                      <ul>
-                            <li> <a href="{% url 'products' 'english_quote' %}" >English Quote</a> </li>
-                            <li> <a href="{% url 'products' 'tamil_quote' %}" >Tamil Quote</a> </li>
+                    <ul>
+                        <li><a href="{% url 'products' 'english_quote' %}">English Quote</a></li>
+                        <li><a href="{% url 'products' 'tamil_quote' %}">Tamil Quote</a></li>
 
-                        </ul>
+                    </ul>
 
 
                 </li>

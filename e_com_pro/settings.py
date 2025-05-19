@@ -154,12 +154,12 @@ WSGI_APPLICATION = 'e_com_pro.wsgi.application'
 
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': "railway",
-#         'USER':"postgres",
-#         'PASSWORD':os.environ.get("DB_PASSWORD"),
-#         "HOST":"postgres.railway.internal",
-#         "PORT":5432,
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'railway',
+#         'USER': 'postgres',
+#         'PASSWORD': 'cpOktqTjiVVuHPeEASHRzwFinxqWTMGk',
+#         'HOST': 'shinkansen.proxy.rlwy.net',
+#         'PORT': '28969',
 #     }
 # }
 

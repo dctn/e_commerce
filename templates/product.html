@@ -71,7 +71,7 @@
             </section>
 
             <section class="nav-second" style="margin-right: 20px">
-                <div class="cart " >
+                <div class="cart ">
                     <a href="{% url 'cart_summary' %}">
                         <img
                                 class="cart-icon"
@@ -146,7 +146,100 @@
             </div>
         </div>
 
-        <div class="lightbox">
+
+        <div class="lightbox pc">
+            <div id="open_box">
+                <div class="gallery">
+
+
+                    <div class="main-img">
+                        <button class="icon-close close_btn">
+                            <i class="fa-solid fa-circle">close</i>
+                        </button>
+                        <!-- icons -->
+
+                        <span class="icon-prev">
+                <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                          d="M11 1 3 9l8 8"
+                          stroke="#1D2026"
+                          stroke-width="3"
+                          fill="none"
+                          fill-rule="evenodd"
+                  />
+                </svg>
+              </span>
+                        <span class="icon-next">
+                <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                          d="m2 1 8 8-8 8"
+                          stroke="#1D2026"
+                          stroke-width="3"
+                          fill="none"
+                          fill-rule="evenodd"
+                  />
+                </svg>
+              </span>
+
+                        <!-- main images -->
+                        <img
+                                class="active"
+                                src="{{ product.image_1.url }}"
+                                alt="product-img"
+                        />
+
+
+                        {% if product.image_2 %}
+                            <img src="{{ product.image_2.url }}" alt="product-img"/>
+                        {% endif %}
+                        {% if product.image_3 %}
+                            <img src="{{ product.image_3.url }}" alt="product-img"/>
+                        {% endif %}
+                        {% if product.image_4 %}
+                            <img src="{{ product.image_4.url }}" alt="product-img"/>
+                        {% endif %}
+                    </div>
+
+
+                    <div class="thumb-list">
+                        <div class="active">
+                            <img
+                                    src="{{ product.image_1.url }}"
+                                    alt="product-img"
+                            />
+                        </div>
+                        {% if product.image_2 %}
+                            <div>
+                                <img
+                                        src="{{ product.image_2.url }}"
+                                        alt="product-img"
+                                />
+                            </div>
+                        {% endif %}
+                        {% if  product.image_3 %}
+                            <div>
+                                <img
+                                        src="{{ product.image_3.url }}"
+                                        alt="product-img"
+                                />
+                            </div>
+                        {% endif %}
+                        {% if  product.image_4 %}
+                            <div>
+                                <img
+                                        src="{{ product.image_4.url }}"
+                                        alt="product-img"
+                                />
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="lightbox mobile">
             <div class="gallery">
                 <div class="main-img">
                     <!-- icons -->
@@ -226,7 +319,7 @@
         </div>
 
         <div class="content">
-            <h3>Elben Creatives</h3>
+            <h3 id="brand_name">Elben Creatives</h3>
             <h2 class="product-name">{{ product.name }} ( {{ product.size }} )</h2>
             <p class="product-desc">{{ product.desp|linebreaks }}
             </p>
@@ -298,7 +391,7 @@
                         </svg>
                     </button>
                 </div>
-                <button class="add-to-cart mb-5" id="add_cart" value="{{ product.id }}" >
+                <button class="add-to-cart mb-5" id="add_cart" value="{{ product.id }}">
               <span>
                 <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -329,37 +422,37 @@
         $("#product_qty").text(quantity)
     })
 
-   $(document).on("click", "#add_cart", function (e) {
-    e.preventDefault();
+    $(document).on("click", "#add_cart", function (e) {
+        e.preventDefault();
 
-    let $btn = $(this);
-    let originalText = $btn.html(); // store original button content
+        let $btn = $(this);
+        let originalText = $btn.html(); // store original button content
 
-    $.ajax({
-        type: "POST",
-        url: "{% url 'add_cart' %}",
-        data: {
-            product_id: $("#add_cart").val(),
-            qty: quantity,
-            csrfmiddlewaretoken: "{{ csrf_token }}",
-            action: "post"
-        },
-        success: function (json) {
-            // show temporary success message
-            $("#cart_notice").text("Added to cart!").fadeIn().delay(1000).fadeOut();
+        $.ajax({
+            type: "POST",
+            url: "{% url 'add_cart' %}",
+            data: {
+                product_id: $("#add_cart").val(),
+                qty: quantity,
+                csrfmiddlewaretoken: "{{ csrf_token }}",
+                action: "post"
+            },
+            success: function (json) {
+                // show temporary success message
+                $("#cart_notice").text("Added to cart!").fadeIn().delay(1000).fadeOut();
 
-            // update button text temporarily
-            $btn.html("✔️ Added!").fadeOut(200).fadeIn(200);
+                // update button text temporarily
+                $btn.html("✔️ Added!").fadeOut(200).fadeIn(200);
 
-            setTimeout(function () {
-                $btn.html(originalText); // revert to original
-            }, 1500);
-        },
-        error: function (xhr, errmsg, err) {
-            console.log("Error:", xhr.status, err);
-        },
+                setTimeout(function () {
+                    $btn.html(originalText); // revert to original
+                }, 1500);
+            },
+            error: function (xhr, errmsg, err) {
+                console.log("Error:", xhr.status, err);
+            },
+        });
     });
-});
 
 </script>
 
