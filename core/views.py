@@ -20,6 +20,19 @@ def home(request):
     }
     return render(request,"index.html",context)
 
+
+def terms(request):
+    return render(request,"terms.html")
+
+def policy(request):
+    return render(request,"privacy_policy.html")
+
+def refund(request):
+    return render(request,"refund.html")
+
+
+
+
 def products(request,product_cat=None):
     all_products = Product.objects.all()
     if product_cat:

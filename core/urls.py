@@ -3,6 +3,9 @@ from .views import *
 
 urlpatterns = [
     path("",home,name="home"),
+    path("Terms_&_Conditions",terms,name="terms"),
+    path("privacy_policy",policy,name="privacy_policy"),
+    path("refund",refund,name="refund"),
     path("products/",products,name="products"),
     path("products/<product_cat>",products,name="products"),
     path("product/<id>",product_detail,name="product"),
