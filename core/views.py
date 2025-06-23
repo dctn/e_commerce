@@ -10,10 +10,8 @@ from django.contrib import messages
 def home(request):
     try:
         product = Product.objects.all().order_by("-no_of_sales")[:4]
-    except:
+    except Exception as e:
         product = None
-
-    print(f"http://{request.get_host()}")
 
     context = {
         "best_products":product
@@ -23,6 +21,10 @@ def home(request):
 
 def terms(request):
     return render(request,"terms.html")
+
+def shipping_page(request):
+    return render(request, "shipping_page.html")
+
 
 def policy(request):
     return render(request,"privacy_policy.html")
