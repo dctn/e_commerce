@@ -27839,3 +27839,672 @@ INFO 2025-06-23 15:23:06,203 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1"
 INFO 2025-06-23 15:23:06,209 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
 INFO 2025-06-23 15:23:06,236 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
 INFO 2025-06-23 15:23:06,300 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:31:42,106 autoreload Watching for file changes with StatReloader
+INFO 2025-09-25 20:32:19,867 autoreload D:\PycharmProjects\e_com_pro\e_com_pro\settings.py changed, reloading.
+INFO 2025-09-25 20:32:20,478 autoreload Watching for file changes with StatReloader
+INFO 2025-09-25 20:32:21,962 autoreload Watching for file changes with StatReloader
+ERROR 2025-09-25 20:32:25,331 log Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: core_product.size
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\PycharmProjects\e_com_pro\core\views.py", line 19, in home
+    return render(request,"index.html",context)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: core_product.size
+ERROR 2025-09-25 20:32:25,337 basehttp "GET / HTTP/1.1" 500 220654
+ERROR 2025-09-25 20:32:25,369 log Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: core_product.size
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\PycharmProjects\e_com_pro\core\views.py", line 19, in home
+    return render(request,"index.html",context)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: core_product.size
+ERROR 2025-09-25 20:32:25,376 basehttp "GET / HTTP/1.1" 500 220654
+WARNING 2025-09-25 20:32:25,511 log Not Found: /favicon.ico
+WARNING 2025-09-25 20:32:25,511 basehttp "GET /favicon.ico HTTP/1.1" 404 7606
+WARNING 2025-09-25 20:32:25,515 log Not Found: /favicon.ico
+WARNING 2025-09-25 20:32:25,515 basehttp "GET /favicon.ico HTTP/1.1" 404 7606
+INFO 2025-09-25 20:32:34,452 basehttp "GET /admin HTTP/1.1" 301 0
+INFO 2025-09-25 20:32:34,464 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-25 20:32:34,488 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4184
+INFO 2025-09-25 20:32:34,507 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22154
+INFO 2025-09-25 20:32:34,508 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-09-25 20:32:34,509 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-09-25 20:32:34,511 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 16632
+INFO 2025-09-25 20:32:34,512 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-09-25 20:32:34,526 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-09-25 20:32:34,528 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-09-25 20:32:37,438 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-09-25 20:32:37,450 basehttp "GET /admin/ HTTP/1.1" 200 17863
+INFO 2025-09-25 20:32:37,465 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:32:37,466 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:32:37,468 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:32:37,469 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:32:37,470 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-09-25 20:32:37,470 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:32:37,471 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:32:37,480 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-09-25 20:32:37,480 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-09-25 20:32:37,481 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+ERROR 2025-09-25 20:32:41,547 log Internal Server Error: /admin/core/product/
+Traceback (most recent call last):
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: core_product.size
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\contrib\admin\options.py", line 2163, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ~~~^^^^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\models\query.py", line 1935, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1622, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\PycharmProjects\e_com_pro\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: core_product.size
+ERROR 2025-09-25 20:32:41,565 basehttp "GET /admin/core/product/ HTTP/1.1" 500 180519
+INFO 2025-09-25 20:33:30,424 basehttp "GET /admin/core/product/ HTTP/1.1" 200 15006
+INFO 2025-09-25 20:33:30,442 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:30,444 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-09-25 20:33:30,446 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:30,447 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:30,447 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-09-25 20:33:30,448 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-09-25 20:33:30,450 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-09-25 20:33:30,451 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:30,451 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-09-25 20:33:30,452 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-09-25 20:33:30,452 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:30,452 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-09-25 20:33:30,453 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-25 20:33:30,453 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-09-25 20:33:30,457 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-09-25 20:33:30,458 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:30,469 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-09-25 20:33:30,589 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-09-25 20:33:30,590 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:32,545 basehttp "GET / HTTP/1.1" 200 31746
+INFO 2025-09-25 20:33:32,563 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 200 1111
+INFO 2025-09-25 20:33:32,563 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 200 6016
+INFO 2025-09-25 20:33:32,563 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 200 16857
+INFO 2025-09-25 20:33:32,564 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 200 26051
+INFO 2025-09-25 20:33:32,565 basehttp "GET /static/assets/css/style.css HTTP/1.1" 200 272428
+INFO 2025-09-25 20:33:32,566 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 200 202346
+INFO 2025-09-25 20:33:32,567 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 200 1043
+INFO 2025-09-25 20:33:32,570 basehttp "GET /static/own_img/sec_1_1.jpeg HTTP/1.1" 200 129153
+INFO 2025-09-25 20:33:32,593 basehttp "GET /static/own_img/sec_1.jpeg HTTP/1.1" 200 163745
+WARNING 2025-09-25 20:33:32,603 log Not Found: /media/product_images/pro-22.jpg
+WARNING 2025-09-25 20:33:32,603 basehttp "GET /media/product_images/pro-22.jpg HTTP/1.1" 404 7719
+INFO 2025-09-25 20:33:32,699 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 200 88145
+INFO 2025-09-25 20:33:32,707 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 200 100914
+INFO 2025-09-25 20:33:32,717 basehttp "GET /static/own_img/new/Sar%2002.jpg HTTP/1.1" 200 7184946
+INFO 2025-09-25 20:33:32,717 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 200 2317
+INFO 2025-09-25 20:33:32,727 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 200 4508
+INFO 2025-09-25 20:33:32,727 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 200 10275
+INFO 2025-09-25 20:33:32,743 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 200 11736
+INFO 2025-09-25 20:33:32,743 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 200 44342
+INFO 2025-09-25 20:33:32,746 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 200 4140
+INFO 2025-09-25 20:33:32,752 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 200 17255
+INFO 2025-09-25 20:33:32,755 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 200 20229
+INFO 2025-09-25 20:33:32,758 basehttp "GET /static/assets/js/main.js HTTP/1.1" 200 26530
+INFO 2025-09-25 20:33:32,761 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 200 1184
+INFO 2025-09-25 20:33:32,765 basehttp "GET /static/assets/images/demos/demo-24/logo.png HTTP/1.1" 200 55306
+INFO 2025-09-25 20:33:32,769 basehttp "GET /static/own_img/video_img.jpeg HTTP/1.1" 200 80674
+INFO 2025-09-25 20:33:32,795 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 200 51756
+WARNING 2025-09-25 20:33:32,826 log Not Found: /media/product_images/pro-22.jpg
+WARNING 2025-09-25 20:33:32,826 basehttp "GET /media/product_images/pro-22.jpg HTTP/1.1" 404 7719
+INFO 2025-09-25 20:33:32,838 basehttp "GET /static/own_img/test_mini.jpeg HTTP/1.1" 200 233379
+INFO 2025-09-25 20:33:32,903 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 200 134912
+INFO 2025-09-25 20:33:33,060 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 200 46384
+INFO 2025-09-25 20:33:33,071 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:33,102 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:33,130 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:38,069 basehttp "GET /admin/core/product/fd5b2c1e-bd01-416f-bb30-cdf5391ac087/change/ HTTP/1.1" 200 22513
+INFO 2025-09-25 20:33:38,088 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:38,088 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2025-09-25 20:33:38,091 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:38,091 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:38,089 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:38,091 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:38,092 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:38,092 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:38,093 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-09-25 20:33:38,099 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:38,094 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:38,100 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:38,095 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:38,103 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:38,098 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
+INFO 2025-09-25 20:33:38,096 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:38,105 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:38,106 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-25 20:33:38,108 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-09-25 20:33:52,578 basehttp "POST /admin/core/product/fd5b2c1e-bd01-416f-bb30-cdf5391ac087/change/ HTTP/1.1" 302 0
+INFO 2025-09-25 20:33:52,593 basehttp "GET /admin/core/product/ HTTP/1.1" 200 15400
+INFO 2025-09-25 20:33:52,610 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:52,610 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:52,611 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:52,612 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:52,614 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:52,614 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:52,616 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:52,616 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:52,616 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:52,619 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:52,619 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:52,620 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:52,620 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:52,621 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-25 20:33:52,621 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:52,623 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:52,626 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:52,629 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-09-25 20:33:54,350 basehttp "GET / HTTP/1.1" 200 31748
+INFO 2025-09-25 20:33:54,365 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,366 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,368 basehttp "GET /static/assets/css/style.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,369 basehttp "GET /static/own_img/new/Sar%2002.jpg HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,370 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,370 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,370 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,371 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,371 basehttp "GET /static/own_img/sec_1_1.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,372 basehttp "GET /static/own_img/sec_1.jpeg HTTP/1.1" 304 0
+WARNING 2025-09-25 20:33:54,378 log Not Found: /media/product_images/pro-22.jpg
+WARNING 2025-09-25 20:33:54,378 basehttp "GET /media/product_images/pro-22.jpg HTTP/1.1" 404 7719
+INFO 2025-09-25 20:33:54,385 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,386 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,395 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,396 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,397 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,397 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,398 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,400 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,400 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,403 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,403 basehttp "GET /static/assets/js/main.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,403 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,405 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,406 basehttp "GET /static/own_img/test_mini.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,406 basehttp "GET /static/own_img/video_img.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,406 basehttp "GET /static/assets/images/demos/demo-24/logo.png HTTP/1.1" 304 0
+WARNING 2025-09-25 20:33:54,416 log Not Found: /media/product_images/pro-22.jpg
+INFO 2025-09-25 20:33:54,418 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 304 0
+WARNING 2025-09-25 20:33:54,423 basehttp "GET /media/product_images/pro-22.jpg HTTP/1.1" 404 7719
+INFO 2025-09-25 20:33:54,467 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,477 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,490 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:54,508 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:56,775 basehttp "GET /product/fd5b2c1e-bd01-416f-bb30-cdf5391ac087 HTTP/1.1" 200 14607
+INFO 2025-09-25 20:33:56,791 basehttp "GET /static/assets/images/demos/demo-24/logo.png HTTP/1.1" 304 0
+INFO 2025-09-25 20:33:56,792 basehttp "GET /static/main.js HTTP/1.1" 200 2643
+INFO 2025-09-25 20:33:56,793 basehttp "GET /static/images/icon-cart.svg HTTP/1.1" 200 666
+INFO 2025-09-25 20:33:56,793 basehttp "GET /static/main.css HTTP/1.1" 200 10538
+WARNING 2025-09-25 20:33:56,805 log Not Found: /media/product_images/pro-22.jpg
+WARNING 2025-09-25 20:33:56,809 log Not Found: /media/product_images/pro-19_1973zcR.jpg
+WARNING 2025-09-25 20:33:56,809 basehttp "GET /media/product_images/pro-22.jpg HTTP/1.1" 404 7719
+WARNING 2025-09-25 20:33:56,809 basehttp "GET /media/product_images/pro-19_1973zcR.jpg HTTP/1.1" 404 7751
+INFO 2025-09-25 20:33:56,811 basehttp "GET /static/slider.js HTTP/1.1" 200 2033
+INFO 2025-09-25 20:33:56,813 basehttp "GET /static/cart.js HTTP/1.1" 200 3788
+WARNING 2025-09-25 20:33:56,862 log Not Found: /media/product_images/pro-19_1973zcR.jpg
+WARNING 2025-09-25 20:33:56,867 log Not Found: /media/product_images/pro-22.jpg
+WARNING 2025-09-25 20:33:56,867 basehttp "GET /media/product_images/pro-19_1973zcR.jpg HTTP/1.1" 404 7751
+WARNING 2025-09-25 20:33:56,868 basehttp "GET /media/product_images/pro-22.jpg HTTP/1.1" 404 7719
+INFO 2025-09-25 20:34:32,119 basehttp "GET /admin/core/product/fd5b2c1e-bd01-416f-bb30-cdf5391ac087/change/ HTTP/1.1" 200 22515
+INFO 2025-09-25 20:34:32,140 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:32,141 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:32,142 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:32,142 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:32,143 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:32,143 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:32,145 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:32,145 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:32,146 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:32,147 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:32,148 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:32,148 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:32,149 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:32,149 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:32,150 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:32,152 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:32,151 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-25 20:34:32,154 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:32,155 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:39,989 basehttp "POST /admin/core/product/fd5b2c1e-bd01-416f-bb30-cdf5391ac087/change/ HTTP/1.1" 302 0
+INFO 2025-09-25 20:34:39,999 basehttp "GET /admin/core/product/ HTTP/1.1" 200 15400
+INFO 2025-09-25 20:34:40,016 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:40,017 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:40,018 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:40,018 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:40,019 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:40,020 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:40,020 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:40,021 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:40,023 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:40,026 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-09-25 20:34:40,026 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:40,022 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:40,022 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:40,027 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:40,028 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:40,031 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:40,032 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:40,036 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:41,936 basehttp "GET /product/fd5b2c1e-bd01-416f-bb30-cdf5391ac087 HTTP/1.1" 200 14715
+INFO 2025-09-25 20:34:41,952 basehttp "GET /static/assets/images/demos/demo-24/logo.png HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:41,953 basehttp "GET /static/images/icon-cart.svg HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:41,953 basehttp "GET /static/main.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:41,957 basehttp "GET /static/main.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:41,961 basehttp "GET /static/slider.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:41,962 basehttp "GET /static/cart.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:42,033 basehttp "GET /media/product_images/61a-Jx5pIsL._SX522_.jpg HTTP/1.1" 200 25893
+INFO 2025-09-25 20:34:42,034 basehttp "GET /media/product_images/61YMmhTx0hL._SX522_.jpg HTTP/1.1" 200 27166
+INFO 2025-09-25 20:34:42,038 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,687 basehttp "GET / HTTP/1.1" 200 31774
+INFO 2025-09-25 20:34:51,707 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,709 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,710 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,711 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,711 basehttp "GET /static/assets/css/style.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,712 basehttp "GET /static/own_img/new/Sar%2002.jpg HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,713 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,713 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,714 basehttp "GET /static/own_img/sec_1_1.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,716 basehttp "GET /static/own_img/sec_1.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,717 basehttp "GET /media/product_images/61YMmhTx0hL._SX522_.jpg HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,726 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,726 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,732 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,732 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,733 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,733 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,733 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,736 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,734 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,735 basehttp "GET /static/assets/images/demos/demo-24/logo.png HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,736 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,739 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,735 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,737 basehttp "GET /static/own_img/video_img.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,740 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,738 basehttp "GET /static/assets/js/main.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,740 basehttp "GET /static/own_img/test_mini.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:34:51,808 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:35:36,150 basehttp "GET /product/fd5b2c1e-bd01-416f-bb30-cdf5391ac087 HTTP/1.1" 200 14715
+INFO 2025-09-25 20:35:36,170 basehttp "GET /static/images/icon-cart.svg HTTP/1.1" 304 0
+INFO 2025-09-25 20:35:36,170 basehttp "GET /static/main.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:35:36,171 basehttp "GET /static/main.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:35:36,171 basehttp "GET /static/assets/images/demos/demo-24/logo.png HTTP/1.1" 304 0
+INFO 2025-09-25 20:35:36,173 basehttp "GET /media/product_images/61YMmhTx0hL._SX522_.jpg HTTP/1.1" 304 0
+INFO 2025-09-25 20:35:36,177 basehttp "GET /static/slider.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:35:36,178 basehttp "GET /static/cart.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:35:36,179 basehttp "GET /media/product_images/61a-Jx5pIsL._SX522_.jpg HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:02,487 basehttp "POST /cart_add/ HTTP/1.1" 200 45
+INFO 2025-09-25 20:36:04,761 basehttp "GET /cart/ HTTP/1.1" 200 26164
+INFO 2025-09-25 20:36:04,778 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,779 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,779 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,780 basehttp "GET /static/assets/css/style.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,780 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,780 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,783 basehttp "GET /media/product_images/61YMmhTx0hL._SX522_.jpg HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,783 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,783 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,787 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,787 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,796 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,796 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,800 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,801 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,803 basehttp "GET /static/assets/images/demos/demo-24/logo.png HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,803 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,803 basehttp "GET /static/assets/js/main.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,804 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,804 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,805 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:04,805 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 304 0
+WARNING 2025-09-25 20:36:04,814 log Not Found: /cart/assets/images/page-header-bg.jpg
+INFO 2025-09-25 20:36:04,815 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 304 0
+WARNING 2025-09-25 20:36:04,815 basehttp "GET /cart/assets/images/page-header-bg.jpg HTTP/1.1" 404 7684
+INFO 2025-09-25 20:36:04,993 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,587 basehttp "GET /payment/checkout/ HTTP/1.1" 200 23351
+INFO 2025-09-25 20:36:08,609 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,609 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,610 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,611 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,612 basehttp "GET /static/assets/css/style.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,612 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,613 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,614 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,614 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,617 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,618 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,625 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,629 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,631 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,633 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,635 basehttp "GET /static/assets/js/main.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,635 basehttp "GET /static/assets/images/demos/demo-24/logo.png HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,635 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,636 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,636 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:08,636 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 304 0
+WARNING 2025-09-25 20:36:08,644 log Not Found: /payment/checkout/assets/images/page-header-bg.jpg
+INFO 2025-09-25 20:36:08,645 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 304 0
+WARNING 2025-09-25 20:36:08,645 basehttp "GET /payment/checkout/assets/images/page-header-bg.jpg HTTP/1.1" 404 9280
+INFO 2025-09-25 20:36:08,657 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,254 basehttp "POST /payment/checkout/ HTTP/1.1" 302 0
+INFO 2025-09-25 20:36:26,266 basehttp "GET /payment/billinginfo/26ba6b60-c7f6-4fce-a413-2bdc411faa57 HTTP/1.1" 200 19880
+INFO 2025-09-25 20:36:26,289 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,290 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,291 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,291 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,292 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,293 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,294 basehttp "GET /media/product_images/61YMmhTx0hL._SX522_.jpg HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,294 basehttp "GET /static/assets/css/style.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,296 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,299 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,308 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,315 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,316 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,317 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,317 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,317 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,317 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,319 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,320 basehttp "GET /static/assets/js/main.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,321 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,322 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,322 basehttp "GET /static/assets/images/demos/demo-24/logo.png HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,322 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:26,664 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:36:33,560 basehttp "POST /payment/proccess_order/26ba6b60-c7f6-4fce-a413-2bdc411faa57 HTTP/1.1" 200 188
+INFO 2025-09-25 20:38:14,453 basehttp "POST /payment/proccess_order/26ba6b60-c7f6-4fce-a413-2bdc411faa57 HTTP/1.1" 200 188
+INFO 2025-09-25 20:38:43,642 basehttp "POST /payment/payment_verify HTTP/1.1" 200 15481
+INFO 2025-09-25 20:38:43,663 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,665 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,665 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,665 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,665 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,666 basehttp "GET /static/assets/css/style.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,667 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,668 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,668 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,671 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,671 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,679 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,680 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,682 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,682 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,684 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,684 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,686 basehttp "GET /static/assets/js/main.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,686 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,695 basehttp "GET /static/assets/images/demos/demo-24/logo.png HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,697 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,713 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:43,731 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,112 basehttp "GET /orders/ HTTP/1.1" 200 18377
+INFO 2025-09-25 20:38:48,131 basehttp "GET /static/assets/css/plugins/magnific-popup/magnific-popup.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,131 basehttp "GET /static/assets/css/demos/demo-24.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,132 basehttp "GET /static/assets/css/plugins/jquery.countdown.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,133 basehttp "GET /static/assets/css/skins/skin-demo-24.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,133 basehttp "GET /static/assets/css/style.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,134 basehttp "GET /static/assets/css/own_style.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,135 basehttp "GET /static/assets/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,135 basehttp "GET /static/assets/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,136 basehttp "GET /static/assets/js/jquery.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,138 basehttp "GET /static/assets/js/jquery.waypoints.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,139 basehttp "GET /static/assets/js/jquery.hoverIntent.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,147 basehttp "GET /static/assets/js/superfish.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,154 basehttp "GET /static/assets/js/jquery.countdown.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,154 basehttp "GET /static/assets/js/jquery.magnific-popup.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,154 basehttp "GET /static/assets/js/owl.carousel.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,154 basehttp "GET /static/assets/js/main.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,154 basehttp "GET /static/assets/js/bootstrap-input-spinner.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,155 basehttp "GET /static/assets/js/jquery.plugin.min.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,157 basehttp "GET /static/assets/images/demos/demo-24/logo.png HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,158 basehttp "GET /static/assets/js/demos/demo-24.js HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,158 basehttp "GET /static/own_img/footer_logo.jpeg HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,164 basehttp "GET /static/assets/fonts/molla0ab2.woff2?74273691 HTTP/1.1" 304 0
+INFO 2025-09-25 20:38:48,182 basehttp "GET /static/own_img/faicon.jpeg HTTP/1.1" 304 0
