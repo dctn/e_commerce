@@ -12,6 +12,8 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
+## this page is projected by stranger
+
 @login_required
 def checkout(request):
     cart = Cart(request)

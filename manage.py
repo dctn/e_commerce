@@ -3,7 +3,7 @@
 import os
 import sys
 
-
+## this page is projected by stranger
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'e_com_pro.settings')

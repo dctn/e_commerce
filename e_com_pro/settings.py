@@ -115,6 +115,7 @@ STORAGES = {
 }
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+## this page is projected by stranger
 
 
 ROOT_URLCONF = 'e_com_pro.urls'

@@ -7,6 +7,8 @@ from django.core.paginator import Paginator
 from django.db.models import Q
 from django.contrib import messages
 # Create your views here.
+## this page is projected by stranger
+
 def home(request):
     try:
         product = Product.objects.all().order_by("-no_of_sales")[:4]

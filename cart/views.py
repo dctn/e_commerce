@@ -3,6 +3,8 @@ from django.http import JsonResponse
 from .cart import Cart
 from core.models import Product
 
+## this page is projected by stranger
+
 # Create your views here.
 def cart_add(request):
     cart = Cart(request)
